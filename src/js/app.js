@@ -90,15 +90,15 @@ window.onload = () => {
 
   window.addEventListener("resize", appHeight);
 
-  document.querySelectorAll(".emitresize").forEach((item) => {
-    item.addEventListener("click", () => {
-      appHeight();
-      runScrollAnimations();
-      ImageParallax();
-      scroll.update();
-      scroll.start();
-    });
-  });
+  // document.querySelectorAll(".emitresize").forEach((item) => {
+  //   item.addEventListener("click", () => {
+  //     appHeight();
+  //     runScrollAnimations();
+  //     ImageParallax();
+  //     scroll.update();
+  //     scroll.start();
+  //   });
+  // });
 
   new Navbar(scroll);
 
@@ -107,7 +107,6 @@ window.onload = () => {
     runAnimations();
     setTimeout(() => {
       ImageParallax();
-
       runScrollAnimations();
       scroll.update();
       scroll.start();

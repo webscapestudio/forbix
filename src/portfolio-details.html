@@ -236,12 +236,37 @@
           <!-- Home video start -->
           <div class="container mt-[144px] lg:mt-[185px]">
             <div class="header-animation">
-              <div class="h-parallaxremove">
-                <video autoplay loop muted>
+              <div class="video-wrapper" id="video-wrapper">
+                <div id="video-overlay" class="video-overlay"></div>
+
+                <video id="video" playsinline muted="muted" loop>
                   <source src="./videos/home.mp4" type="video/mp4" />
                   <source src="./videos/home.webm" type="video/webm" />
-                  Your browser doesn't support HTML5 video tag.
                 </video>
+
+                <div
+                  class="video-controls"
+                  data-cursor="-hidden"
+                  id="video-controls"
+                >
+                  <div class="video-progress">
+                    <progress id="progress-bar" value="0" min="0"></progress>
+                    <input
+                      class="seek"
+                      id="seek"
+                      value="0"
+                      min="0"
+                      type="range"
+                      step="1"
+                    />
+                    <div class="seek-tooltip" id="seek-tooltip">00:00</div>
+                  </div>
+                  <div class="video-time">
+                    <time id="time-elapsed">00:00</time>
+                    <span> / </span>
+                    <time id="duration">00:00</time>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -397,7 +422,7 @@
             </div>
           </main>
 
-          <div class="container mt-[72px] md:mt-[234px] space-y-5">
+          <div class="container mt-[72px] md:mt-[234px] space-y-6">
             <div class="grid lg:grid-cols-2 gap-5">
               <img
                 class="h-full w-full"
@@ -429,20 +454,28 @@
               alt=""
             />
 
-            <div class="grid md:grid-cols-2 gap-5">
-              <div class="flex md:justify-end">
-                <img src="./images/content/project-6.jpg" alt="" />
+            <div class="grid md:grid-cols-6 grid-cols-1 gap-6">
+              <div class="md:col-start-3">
+                <img
+                  src="./images/content/project-6.jpg"
+                  class="block"
+                  alt=""
+                />
               </div>
-              <div class="flex md:justify-end">
-                <img src="./images/content/project-7.jpg" alt="" />
+              <div class="md:col-start-5">
+                <img
+                  src="./images/content/project-7.jpg"
+                  class="block"
+                  alt=""
+                />
               </div>
             </div>
 
-            <div class="grid grid-cols-2 md:flex md:gap-5 gap-y-5">
-              <div class="flex justify-end col-start-2">
+            <div class="grid md:grid-cols-6 grid-cols-1 gap-6">
+              <div class="">
                 <img src="./images/content/project-8.jpg" alt="" />
               </div>
-              <div class="flex justify-end">
+              <div class="">
                 <img src="./images/content/project-9.jpg" alt="" />
               </div>
             </div>
@@ -651,43 +684,6 @@
             </div>
           </section>
           <!-- Section news end -->
-
-          <section
-            class="bg-[#F5F5F5] pt-[53px] pb-[83px] mt-[202px] md:mt-[282px]"
-          >
-            <div class="container">
-              <p class="text-sm uppercase md:text-xl leading-none text-center">
-                next project
-              </p>
-              <h2
-                class="text-[27px] md:text-[49px] text-center mt-[18px] md:mt-[25px] uppercase"
-              >
-                Hillcrest, Inglewood
-              </h2>
-            </div>
-
-            <div class="project-swiper swiper mt-[47px] md:mt-[54px]">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide" data-cursor-arrow-right>
-                  <img src="./images/content/project-slide.jpg" alt="" />
-                </div>
-                <div class="swiper-slide" data-cursor-arrow-right>
-                  <img src="./images/content/project-slide.jpg" alt="" />
-                </div>
-                <div class="swiper-slide" data-cursor-arrow-right>
-                  <img src="./images/content/project-slide.jpg" alt="" />
-                </div>
-                <div class="swiper-slide" data-cursor-arrow-right>
-                  <img src="./images/content/project-slide.jpg" alt="" />
-                </div>
-                <div class="swiper-slide" data-cursor-arrow-right>
-                  <img src="./images/content/project-slide.jpg" alt="" />
-                </div>
-              </div>
-            </div>
-          </section>
 
           <!-- Footer start -->
           <footer class="footer mt-56 md:mt-80">

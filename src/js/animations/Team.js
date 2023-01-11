@@ -19,7 +19,6 @@ export default class Team {
 
         scrollTrigger: {
           scroller: ".smooth-scroll",
-          // markers: true,
           trigger: element,
           scrub: false,
           pin: false,

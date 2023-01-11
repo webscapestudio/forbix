@@ -17,7 +17,6 @@ export default class ALine {
         // duration: 2,
         ease: "power3.out",
         scrollTrigger: {
-          markers: true,
           scrub: true,
           trigger: line,
         },

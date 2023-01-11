@@ -6,9 +6,7 @@ export default class Preloader {
   constructor(fn) {
     this.fn = fn;
     this.dev = false;
-    // this.dev = false;
 
-    // this.wrapper = document.querySelector('[data-barba="wrapper"]');
     this.wrapper = document.querySelector('[data-barba="wrapper"]');
     this.logo = document.querySelector(".logo");
     this.logoSVG = document.querySelector(".logo svg");

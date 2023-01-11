@@ -42,167 +42,183 @@ import { ImageParallax } from "./animations/ImageParallax";
 
 import LocomotiveScroll from "locomotive-scroll";
 
-const scroll = new LocomotiveScroll({
-  el: document.querySelector(".smooth-scroll"),
-  smooth: true,
-});
+window.onload = () => {
+  const scroll = new LocomotiveScroll({
+    el: document.querySelector(".smooth-scroll"),
+    smooth: true,
+    smoothMobile: true,
+  });
 
-scroll.on("scroll", ScrollTrigger.update);
+  scroll.on("scroll", ScrollTrigger.update);
 
-ScrollTrigger.scrollerProxy(".smooth-scroll", {
-  scrollTop(value) {
-    return arguments.length
-      ? scroll.scrollTo(value, 0, 0)
-      : scroll.scroll.instance.scroll.y;
-  },
+  ScrollTrigger.scrollerProxy(".smooth-scroll", {
+    scrollTop(value) {
+      return arguments.length
+        ? scroll.scrollTo(value, 0, 0)
+        : scroll.scroll.instance.scroll.y;
+    },
 
-  getBoundingClientRect() {
-    return {
-      top: 0,
-      left: 0,
-      width: window.innerWidth,
-      height: window.innerHeight,
-    };
-  },
+    getBoundingClientRect() {
+      return {
+        top: 0,
+        left: 0,
+        width: window.innerWidth,
+        height: window.innerHeight,
+      };
+    },
 
-  pinType: document.querySelector(".smooth-scroll").style.transform
-    ? "transform"
-    : "fixed",
-});
+    pinType: document.querySelector(".smooth-scroll").style.transform
+      ? "transform"
+      : "fixed",
+  });
 
-ScrollTrigger.defaults({ scroller: ".smooth-scroll" });
+  scroll.stop();
 
-window.select = (element, src = document) => src.querySelector(element);
+  ScrollTrigger.defaults({ scroller: ".smooth-scroll" });
 
-window.selectAll = (elements, src = document) => src.querySelectorAll(elements);
+  window.select = (element, src = document) => src.querySelector(element);
 
-window.getChildIndex = (el, src = document) =>
-  Array.from(el.parentNode.children).indexOf(el);
-window.wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-window.removeClasses = (els, className) => {
-  for (let el of els) el.classList.remove(className);
-};
+  window.selectAll = (elements, src = document) =>
+    src.querySelectorAll(elements);
 
-const navbar = new Navbar();
+  window.getChildIndex = (el, src = document) =>
+    Array.from(el.parentNode.children).indexOf(el);
+  window.wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+  window.removeClasses = (els, className) => {
+    for (let el of els) el.classList.remove(className);
+  };
 
-window.addEventListener("resize", appHeight);
-appHeight();
+  const navbar = new Navbar();
 
-new preloader(() => {
-  runAnimations();
-  setTimeout(() => {
-    runScrollAnimations();
-    ImageParallax();
+  window.addEventListener("resize", appHeight);
+
+  document.querySelectorAll(".emitresize").forEach((item) => {
+    item.addEventListener("click", () => {
+      setTimeout(() => {
+        runScrollAnimations();
+        ImageParallax();
+        appHeight();
+      }, 2000);
+    });
+  });
+
+  new preloader(() => {
     appHeight();
-  }, 1200);
-});
-//   window.scrollTo(0, 0);
+    runAnimations();
+    setTimeout(() => {
+      runScrollAnimations();
+      ImageParallax();
+      scroll.start();
+    }, 1200);
+  });
+  //   window.scrollTo(0, 0);
 
-//   // Scrollbar.init(document.querySelector(".scroller"), { damping: 0.07 });
-//   runAnimations();
-//   ImageParallax();
-//   runScrollAnimations();
-// });
+  //   // Scrollbar.init(document.querySelector(".scroller"), { damping: 0.07 });
+  //   runAnimations();
+  //   ImageParallax();
+  //   runScrollAnimations();
+  // });
 
-// barba.init({
-//   transitions: [
-//     {
-//       name: "general-transition",
-//       sync: true,
-//       once() {},
-//       // async leave(data) {
-//       //   const done = this.async();
+  // barba.init({
+  //   transitions: [
+  //     {
+  //       name: "general-transition",
+  //       sync: true,
+  //       once() {},
+  //       // async leave(data) {
+  //       //   const done = this.async();
 
-//       //   if (data.trigger !== "back" && data.trigger.closest(".navbar")) {
-//       //     navbar.close();
-//       //     await wait(800);
-//       //     done();
-//       //   } else {
-//       //     const tl = gsap.timeline();
+  //       //   if (data.trigger !== "back" && data.trigger.closest(".navbar")) {
+  //       //     navbar.close();
+  //       //     await wait(800);
+  //       //     done();
+  //       //   } else {
+  //       //     const tl = gsap.timeline();
 
-//       //     tl.to(".page-transition", {
-//       //       clipPath: "circle(80% at 50% 50%)",
-//       //       duration: 1,
-//       //       ease: "power3.out",
-//       //     }).to(
-//       //       ".page-transition",
-//       //       {
-//       //         clipPath: "circle(80% at 260% 50%)",
-//       //         duration: 1,
-//       //         ease: "power3.in",
+  //       //     tl.to(".page-transition", {
+  //       //       clipPath: "circle(80% at 50% 50%)",
+  //       //       duration: 1,
+  //       //       ease: "power3.out",
+  //       //     }).to(
+  //       //       ".page-transition",
+  //       //       {
+  //       //         clipPath: "circle(80% at 260% 50%)",
+  //       //         duration: 1,
+  //       //         ease: "power3.in",
 
-//       //         onComplete() {
-//       //           gsap.set(".page-transition", {
-//       //             clipPath: "circle(30% at -80% 50%)",
-//       //           });
-//       //         },
-//       //       },
-//       //       "-=.2"
-//       //     );
-//       //     await wait(1200);
-//       //     done();
-//       //   }
-//       // },
+  //       //         onComplete() {
+  //       //           gsap.set(".page-transition", {
+  //       //             clipPath: "circle(30% at -80% 50%)",
+  //       //           });
+  //       //         },
+  //       //       },
+  //       //       "-=.2"
+  //       //     );
+  //       //     await wait(1200);
+  //       //     done();
+  //       //   }
+  //       // },
 
-//       async enter(data) {
-//         const done = this.async();
+  //       async enter(data) {
+  //         const done = this.async();
 
-//         if (data.trigger !== "back" && data.trigger.closest(".navbar")) {
-//           navbar.close();
-//           await wait(800);
-//           done();
-//         } else {
-//           const tl = gsap.timeline();
+  //         if (data.trigger !== "back" && data.trigger.closest(".navbar")) {
+  //           navbar.close();
+  //           await wait(800);
+  //           done();
+  //         } else {
+  //           const tl = gsap.timeline();
 
-//           tl.to(".page-transition", {
-//             clipPath: "circle(80% at 50% 50%)",
-//             duration: 1,
-//             ease: "power3.out",
-//           }).to(
-//             ".page-transition",
-//             {
-//               clipPath: "circle(80% at 260% 50%)",
-//               duration: 1,
-//               ease: "power3.in",
+  //           tl.to(".page-transition", {
+  //             clipPath: "circle(80% at 50% 50%)",
+  //             duration: 1,
+  //             ease: "power3.out",
+  //           }).to(
+  //             ".page-transition",
+  //             {
+  //               clipPath: "circle(80% at 260% 50%)",
+  //               duration: 1,
+  //               ease: "power3.in",
 
-//               onComplete() {
-//                 gsap.set(".page-transition", {
-//                   clipPath: "circle(30% at -80% 50%)",
-//                 });
-//               },
-//             },
-//             "-=.2"
-//           );
-//           await wait(1200);
-//           done();
-//         }
-//       },
-//     },
-//   ],
-// });
+  //               onComplete() {
+  //                 gsap.set(".page-transition", {
+  //                   clipPath: "circle(30% at -80% 50%)",
+  //                 });
+  //               },
+  //             },
+  //             "-=.2"
+  //           );
+  //           await wait(1200);
+  //           done();
+  //         }
+  //       },
+  //     },
+  //   ],
+  // });
 
-function runAnimations() {
-  new Header();
-  new Buttons();
-  new Concept();
-  new HeightParallax();
-  new Marquee();
-  new TeamSlide();
-  new HistorySlide();
-  new Accordion();
-  new ProcessSlide();
-  new ReviewSlide();
-  new Map();
-  new TextMore();
-  new ProjectMap();
-  new ProjectSwiper();
-  new NewsSlider();
-  new Video();
-  new Footer();
-}
+  function runAnimations() {
+    new Header();
+    new Buttons();
+    new Concept();
+    new HeightParallax();
+    new Marquee();
+    new TeamSlide();
+    new HistorySlide();
+    new Accordion();
+    new ProcessSlide();
+    new ReviewSlide();
+    new Map();
+    new TextMore();
+    new ProjectMap();
+    new ProjectSwiper();
+    new NewsSlider();
+    new Video();
+    new Footer();
+  }
 
-function runScrollAnimations() {
-  new ALine();
-  new Num();
-  new Team();
-}
+  function runScrollAnimations() {
+    new ALine();
+    new Num();
+    new Team();
+  }
+};

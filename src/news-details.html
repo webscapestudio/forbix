@@ -234,12 +234,37 @@
           <!-- Home video start -->
           <div class="container mt-[22px] lg:mt-[110px]">
             <div class="header-animation">
-              <div class="h-parallaxremove">
-                <video autoplay loop muted>
+              <div class="video-wrapper" id="video-wrapper">
+                <div id="video-overlay" class="video-overlay"></div>
+
+                <video id="video" playsinline muted="muted" loop>
                   <source src="./videos/home.mp4" type="video/mp4" />
                   <source src="./videos/home.webm" type="video/webm" />
-                  Your browser doesn't support HTML5 video tag.
                 </video>
+
+                <div
+                  class="video-controls"
+                  data-cursor="-hidden"
+                  id="video-controls"
+                >
+                  <div class="video-progress">
+                    <progress id="progress-bar" value="0" min="0"></progress>
+                    <input
+                      class="seek"
+                      id="seek"
+                      value="0"
+                      min="0"
+                      type="range"
+                      step="1"
+                    />
+                    <div class="seek-tooltip" id="seek-tooltip">00:00</div>
+                  </div>
+                  <div class="video-time">
+                    <time id="time-elapsed">00:00</time>
+                    <span> / </span>
+                    <time id="duration">00:00</time>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

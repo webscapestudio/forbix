@@ -14,14 +14,12 @@ export default class ALine {
     lines.forEach((line) => {
       gsap.to(line, {
         width: "100%",
-        duration: 2,
+        // duration: 2,
         ease: "power3.out",
         scrollTrigger: {
-          // markers: true,
-          scroller: ".scroller",
+          markers: true,
           scrub: true,
           trigger: line,
-          start: "top 80%",
         },
       });
     });

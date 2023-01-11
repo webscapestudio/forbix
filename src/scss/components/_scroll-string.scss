@@ -1,0 +1,19 @@
+.wrapperRollingText {
+  white-space: nowrap;
+}
+
+.rollingText {
+  font-size: 112px;
+  line-height: 96.34%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--color-dark);
+  display: inline-block;
+  padding-left: 10px;
+  will-change: auto;
+
+  @include media-up(lg) {
+    font-size: 280px;
+    line-height: 96.34%;
+  }
+}

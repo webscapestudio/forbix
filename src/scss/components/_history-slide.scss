@@ -1,0 +1,31 @@
+.history-swiper {
+  @apply relative h-[450px] cursor-grab;
+  &:active {
+    @apply cursor-grabbing;
+  }
+
+  &::before {
+    content: '';
+    @apply absolute left-0 w-full h-px bg-gray-300 top-1/2 -translate-y-1/2 pointer-events-none;
+  }
+
+  .swiper-slide {
+    @apply flex flex-col justify-center w-80 relative px-3 md:px-0 gap-8 md:gap-12;
+
+    &:before {
+      content: '';
+      @apply absolute left-0 top-0 w-[200%] h-full -z-10;
+    }
+  }
+
+  &__text {
+    @apply text-dark opacity-0 will-change-auto max-w-[211px] md:max-w-[326px] translate-y-2 md:translate-y-3;
+  }
+
+  &__heading {
+    @apply text-[109px] md:text-[55px] text-[#A1A1AA] leading-none origin-bottom-left will-change-auto scale-[0.4] mt-10;
+  }
+  &__img {
+    @apply w-36 h-44 object-cover absolute right-6 top-0 opacity-0 mr-[72px] md:mr-0;
+  }
+}

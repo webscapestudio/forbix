@@ -1,0 +1,41 @@
+.concept {
+  max-width: 820px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  &__text {
+    font-size: 2rem;
+    line-height: 1.2;
+    color: var(--color-dark);
+    text-indent: 160px;
+
+    a {
+      @apply text-neutral-400;
+    }
+
+    @screen lg {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__img {
+    @apply absolute will-change-auto hidden invisible xl:block xl:visible pointer-events-none;
+
+    &:nth-of-type(1) {
+      left: -100px;
+      bottom: calc(100% + 40px);
+    }
+
+    &:nth-of-type(2) {
+      right: -200px;
+      bottom: -140px;
+    }
+
+    &:nth-of-type(3) {
+      left: -200px;
+      bottom: -200px;
+    }
+  }
+}

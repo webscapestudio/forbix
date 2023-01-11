@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forbix | Investment company</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/content/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/content/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/content/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/content/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./images/content/favicon/safari-pinned-tab.svg"
+      color="#000000"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <div class="scroller">
+      <div data-barba="wrapper">
+        <!-- Preloader start -->
+        <div class="preloader">
+          <div class="preloader__content">
+            <p>Loading</p>
+            <p><span id="preloader-percent">0</span> %</p>
+          </div>
+        </div>
+        <!-- Preloader end -->
+
+        <!-- Page transition -->
+        <div class="page-transition">
+          <img src="./images/content/forbix-logo-light.svg" alt="" />
+        </div>
+        <!-- Page transition end -->
+
+        <!-- Navbar start -->
+        <div class="container relative">
+          <button class="navbar-burger">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <div class="navbar">
+          <div class="container">
+            <a class="navbar__logo" href="./index.html">
+              <img src="./images/content/logo-light.svg" alt="" />
+            </a>
+          </div>
+
+          <div class="navbar__list">
+            <div class="navbar__list-item">
+              <div class="container" data-cursor-arrow>
+                <a href="./commercial.html" class="navbar__list-link">
+                  <span class="navbar__list-num">01/</span>
+                  <span class="navbar__list-text">Commercial loans</span>
+                  <!-- <img
+                  class="navbar__list-img"
+                  src="./images/content/nav-img.png"
+                  alt=""
+                />
+               -->
+                  <video
+                    class="navbar__list-img"
+                    muted
+                    autoplay
+                    src="./videos/home.mp4"
+                  ></video>
+                </a>
+              </div>
+            </div>
+            <div class="navbar__list-item">
+              <div class="container" data-cursor-arrow>
+                <a href="./portfolio.html" class="navbar__list-link">
+                  <span class="navbar__list-num">02/</span>
+                  <span class="navbar__list-text"> Real estate investment</span>
+                  <!-- <img class="navbar__list-img" src="./images/content/nav-img.png" alt="" /> -->
+                  <video
+                    class="navbar__list-img"
+                    muted
+                    autoplay
+                    src="./videos/home.mp4"
+                  ></video>
+                </a>
+              </div>
+            </div>
+            <div class="navbar__list-item">
+              <div class="container" data-cursor-arrow>
+                <a href="./residential.html" class="navbar__list-link">
+                  <span class="navbar__list-num">03/</span>
+                  <span class="navbar__list-text">Residential loans</span>
+                  <!-- <img class="navbar__list-img" src="./images/content/nav-img.png" alt="" /> -->
+                  <video
+                    class="navbar__list-img"
+                    muted
+                    autoplay
+                    src="./videos/home.mp4"
+                  ></video>
+                </a>
+              </div>
+            </div>
+            <div class="navbar__list-item">
+              <div class="container" data-cursor-arrow>
+                <a href="about.html" class="navbar__list-link">
+                  <span class="navbar__list-num">04/</span>
+                  <span class="navbar__list-text">About us</span>
+                  <!-- <img class="navbar__list-img" src="./images/content/nav-img.png" alt="" /> -->
+                  <video
+                    class="navbar__list-img"
+                    muted
+                    autoplay
+                    src="./videos/home.mp4"
+                  ></video>
+                </a>
+              </div>
+            </div>
+            <div class="navbar__list-item">
+              <div class="container" data-cursor-arrow>
+                <a href="./contact.html" class="navbar__list-link">
+                  <span class="navbar__list-num">05/</span>
+                  <span class="navbar__list-text">Contacts</span>
+                  <!-- <img class="navbar__list-img" src="./images/content/nav-img.png" alt="" /> -->
+                  <video
+                    class="navbar__list-img"
+                    muted
+                    autoplay
+                    src="./videos/home.mp4"
+                  ></video>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="navbar__footer">
+              <a href="#">Instagram</a>
+              <a href="#">Facebook</a>
+              <a href="#">Twitter</a>
+            </div>
+          </div>
+        </div>
+        <!-- Navbar start -->
+
+        <div data-barba="container" data-barba-namespace="portfolio">
+          <div class="container" id="relative-container">
+            <a href="./index.html" class="logo">
+              <svg
+                width="98"
+                viewBox="0 0 97 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="logo-path"
+                  d="M0 22.7905H4.0678V13.794H10.8374V9.84495H4.0678V4.76752H11.1639V0.818501H0L0 22.7905Z"
+                  fill="#292B32"
+                />
+                <path
+                  class="logo-path"
+                  d="M24.3157 19.3762C20.0698 19.3762 16.8334 15.9912 16.8334 11.8343C16.8334 7.73678 20.0401 4.38165 24.3454 4.38165C28.6508 4.38165 31.8574 7.73678 31.8574 11.8343C31.8574 15.9318 28.6805 19.3762 24.3157 19.3762ZM24.3454 0.432632C17.7835 0.432632 12.7656 5.56925 12.7656 11.9234C12.7656 18.2777 17.8132 23.3252 24.3454 23.3252C30.8777 23.3252 35.9253 18.2777 35.9253 11.9234C35.9253 5.56925 30.9074 0.432632 24.3454 0.432632"
+                  fill="#292B32"
+                />
+                <path
+                  class="logo-path"
+                  d="M50.0536 7.7965C50.0536 5.68836 49.1925 0.81899 41.7992 0.81899H35.4453V4.75958H39.5463V4.76782H41.918C42.868 4.76782 45.9858 4.8571 45.9858 8.03405C45.9858 11.2112 42.868 11.3001 41.918 11.3001H39.5463V14.6851H39.5723L45.2731 22.791H50.2912L44.1152 14.6851C47.7079 14.3288 50.0536 11.3001 50.0536 7.7965Z"
+                  fill="#292B32"
+                />
+                <path
+                  class="logo-path"
+                  d="M59.5618 18.8417H56.9194V13.2298H59.5618C62.7388 13.2298 63.0357 15.249 63.0357 16.0803C63.0357 18.812 60.0367 18.8417 59.5618 18.8417ZM56.9194 4.76752H58.8196C59.7101 4.76752 61.6996 4.88649 61.6996 7.02433C61.6996 7.58834 61.4918 9.28094 58.8196 9.28094H56.9194V4.76752ZM63.3624 10.795C63.9563 10.4683 65.7674 9.34033 65.7674 6.6086C65.7674 0.848387 59.5024 0.818694 58.1365 0.818694H52.8516V22.7905H58.3443C65.3812 22.7905 67.1035 19.2869 67.1035 16.11C67.1035 13.6455 65.7378 11.5967 63.3624 10.795"
+                  fill="#292B32"
+                />
+                <path
+                  class="logo-path"
+                  d="M69.6172 22.7905H73.685V0.900106H69.6172V22.7905Z"
+                  fill="#292B32"
+                />
+
+                <path
+                  class="logo-path"
+                  d="M96.0055 0.903645H91.3005L86.1248 8.46125L80.9786 0.903645H76.2734L83.7724 11.784L76.2734 22.6646H80.9786L86.1248 15.1364L91.3005 22.6646H96.0055L88.4774 11.784L96.0055 0.903645Z"
+                  fill="#292B32"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Hero start -->
+          <header class="container pt-[114px] md:pt-[106px]">
+            <p class="hidden md:inline-block text-sm header-animation">
+              <a href="index.html" class="text-[#A1A1A1]">Home /</a> Real estate
+              investment
+            </p>
+
+            <h1 class="heading-primary text-center md:mt-[89px]">
+              <span class="header-animation inline-block">REAL ESTATE </span>
+              <br />
+              <span class="header-animation inline-block">INVESTMENT</span>
+            </h1>
+          </header>
+          <!-- Hero end -->
+
+          <div class="mt-[100px] md:mt-[315px]" x-data="{tab: 'table'}">
+            <div class="container">
+              <div class="flex justify-end gap-8">
+                <button
+                  :class="tab === 'table' ? 'text-[#24138B]' : 'text-[#c6c6c6]'"
+                  @click="tab = 'table'"
+                  class="hidden emitresize md:block"
+                >
+                  <svg
+                    width="24"
+                    height="17"
+                    viewBox="0 0 24 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      y1="16.3359"
+                      x2="23.75"
+                      y2="16.3359"
+                      stroke="currentColor"
+                    />
+                    <line y1="0.5" x2="23.75" y2="0.5" stroke="currentColor" />
+                    <line
+                      y1="8.41406"
+                      x2="23.75"
+                      y2="8.41406"
+                      stroke="currentColor"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="emitresize"
+                  :class="tab === 'card' ? 'text-[#24138B]' : 'text-[#c6c6c6]' "
+                  @click="tab = 'card'"
+                >
+                  <svg
+                    width="18"
+                    height="17"
+                    viewBox="0 0 18 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="17.2891"
+                      y1="16.8359"
+                      x2="17.2891"
+                      y2="2.18557e-08"
+                      stroke="currentColor"
+                    />
+                    <line
+                      x1="1.45703"
+                      y1="16.8359"
+                      x2="1.45703"
+                      y2="2.18557e-08"
+                      stroke="currentColor"
+                    />
+                    <line
+                      x1="9.375"
+                      y1="16.8359"
+                      x2="9.375"
+                      y2="2.18557e-08"
+                      stroke="currentColor"
+                    />
+                  </svg>
+                </button>
+                <button
+                  :class="tab === 'map' ? 'text-[#24138B]' : 'text-[#c6c6c6]'"
+                  @click="tab = 'map'"
+                  class="emitresize"
+                >
+                  MAP
+                </button>
+              </div>
+              <!-- <div class="a-line mt-8"></div> -->
+            </div>
+
+            <div class="mt-6 md:mt-8">
+              <div x-show="tab === 'table'">
+                <div
+                  class="divide-y divide-[#D4D4D4] hidden md:block"
+                  data-cursor-text="View"
+                >
+                  <a href="#" class="py-10 group relative block">
+                    <div
+                      class="absolute top-0 left-0 w-full h-0 bg-[#24138B] group-hover:h-full transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)] z-[1]"
+                    ></div>
+                    <img
+                      class="absolute w-[392px] [clip-path:inset(0_100%_0_0)] group-hover:[clip-path:inset(0_0_0_0)] transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)] top-1/2 -translate-y-1/2 left-[30%] pointer-events-none z-10"
+                      src="./images/content/table-portfolio.png"
+                      alt=""
+                    />
+                    <div
+                      class="container flex items-center justify-between relative z-[2]"
+                    >
+                      <div
+                        class="transition-all group-hover:pl-[34px] duration-500 ease-[cubic-bezier(.77,.14,.11,.88)]"
+                      >
+                        <p
+                          class="text-[#9D9D9D] text-sm uppercase group-hover:text-white transition-colors"
+                        >
+                          project
+                        </p>
+                        <p
+                          class="max-w-[223px] uppercase text-[27px] leading-none mt-3 group-hover:text-white transition-colors"
+                        >
+                          Fifth, Olympia
+                        </p>
+                      </div>
+                      <div class="flex gap-[100px]">
+                        <div class="">
+                          <p
+                            class="text-base group-hover:text-white transition-colors"
+                          >
+                            Floors:
+                          </p>
+                          <p
+                            class="text-[40px] mt-3 group-hover:text-white transition-colors"
+                          >
+                            3
+                          </p>
+                        </div>
+                        <div class="">
+                          <p
+                            class="text-base group-hover:text-white transition-colors"
+                          >
+                            Rooms:
+                          </p>
+                          <p
+                            class="text-[40px] mt-3 group-hover:text-white transition-colors"
+                          >
+                            11
+                          </p>
+                        </div>
+                        <div class="">
+                          <p
+                            class="text-base group-hover:text-white transition-colors"
+                          >
+                            Area:
+                          </p>
+                          <p
+                            class="text-[40px] mt-3 group-hover:text-white transition-colors"
+                          >
+                            2km <sup>2</sup>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="py-10 group relative block">
+                    <div
+                      class="absolute top-0 left-0 w-full h-0 bg-[#24138B] group-hover:h-full transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)] z-[1]"
+                    ></div>
+                    <img
+                      class="absolute w-[392px] [clip-path:inset(0_100%_0_0)] group-hover:[clip-path:inset(0_0_0_0)] transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)] top-1/2 -translate-y-1/2 left-[30%] pointer-events-none z-10"
+                      src="./images/content/table-portfolio.png"
+                      alt=""
+                    />
+                    <div
+                      class="container flex items-center justify-between relative z-[2]"
+                    >
+                      <div
+                        class="transition-all group-hover:pl-[34px] duration-500 ease-[cubic-bezier(.77,.14,.11,.88)]"
+                      >
+                        <p
+                          class="text-[#9D9D9D] text-sm uppercase group-hover:text-white transition-colors"
+                        >
+                          project
+                        </p>
+                        <p
+                          class="max-w-[223px] uppercase text-[27px] leading-none mt-3 group-hover:text-white transition-colors"
+                        >
+                          Fifth, Olympia
+                        </p>
+                      </div>
+                      <div class="flex gap-[100px]">
+                        <div class="">
+                          <p
+                            class="text-base group-hover:text-white transition-colors"
+                          >
+                            Floors:
+                          </p>
+                          <p
+                            class="text-[40px] mt-3 group-hover:text-white transition-colors"
+                          >
+                            3
+                          </p>
+                        </div>
+                        <div class="">
+                          <p
+                            class="text-base group-hover:text-white transition-colors"
+                          >
+                            Rooms:
+                          </p>
+                          <p
+                            class="text-[40px] mt-3 group-hover:text-white transition-colors"
+                          >
+                            11
+                          </p>
+                        </div>
+                        <div class="">
+                          <p
+                            class="text-base group-hover:text-white transition-colors"
+                          >
+                            Area:
+                          </p>
+                          <p
+                            class="text-[40px] mt-3 group-hover:text-white transition-colors"
+                          >
+                            2km <sup>2</sup>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="py-10 group relative block">
+                    <div
+                      class="absolute top-0 left-0 w-full h-0 bg-[#24138B] group-hover:h-full transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)] z-[1]"
+                    ></div>
+                    <img
+                      class="absolute w-[392px] [clip-path:inset(0_100%_0_0)] group-hover:[clip-path:inset(0_0_0_0)] transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)] top-1/2 -translate-y-1/2 left-[30%] pointer-events-none z-10"
+                      src="./images/content/table-portfolio.png"
+                      alt=""
+                    />
+                    <div
+                      class="container flex items-center justify-between relative z-[2]"
+                    >
+                      <div
+                        class="transition-all group-hover:pl-[34px] duration-500 ease-[cubic-bezier(.77,.14,.11,.88)]"
+                      >
+                        <p
+                          class="text-[#9D9D9D] text-sm uppercase group-hover:text-white transition-colors"
+                        >
+                          project
+                        </p>
+                        <p
+                          class="max-w-[223px] uppercase text-[27px] leading-none mt-3 group-hover:text-white transition-colors"
+                        >
+                          Fifth, Olympia
+                        </p>
+                      </div>
+                      <div class="flex gap-[100px]">
+                        <div class="">
+                          <p
+                            class="text-base group-hover:text-white transition-colors"
+                          >
+                            Floors:
+                          </p>
+                          <p
+                            class="text-[40px] mt-3 group-hover:text-white transition-colors"
+                          >
+                            3
+                          </p>
+                        </div>
+                        <div class="">
+                          <p
+                            class="text-base group-hover:text-white transition-colors"
+                          >
+                            Rooms:
+                          </p>
+                          <p
+                            class="text-[40px] mt-3 group-hover:text-white transition-colors"
+                          >
+                            11
+                          </p>
+                        </div>
+                        <div class="">
+                          <p
+                            class="text-base group-hover:text-white transition-colors"
+                          >
+                            Area:
+                          </p>
+                          <p
+                            class="text-[40px] mt-3 group-hover:text-white transition-colors"
+                          >
+                            2km <sup>2</sup>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="py-10 group relative block">
+                    <div
+                      class="absolute top-0 left-0 w-full h-0 bg-[#24138B] group-hover:h-full transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)] z-[1]"
+                    ></div>
+                    <img
+                      class="absolute w-[392px] [clip-path:inset(0_100%_0_0)] group-hover:[clip-path:inset(0_0_0_0)] transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)] top-1/2 -translate-y-1/2 left-[30%] pointer-events-none z-10"
+                      src="./images/content/table-portfolio.png"
+                      alt=""
+                    />
+                    <div
+                      class="container flex items-center justify-between relative z-[2]"
+                    >
+                      <div
+                        class="transition-all group-hover:pl-[34px] duration-500 ease-[cubic-bezier(.77,.14,.11,.88)]"
+                      >
+                        <p
+                          class="text-[#9D9D9D] text-sm uppercase group-hover:text-white transition-colors"
+                        >
+                          project
+                        </p>
+                        <p
+                          class="max-w-[223px] uppercase text-[27px] leading-none mt-3 group-hover:text-white transition-colors"
+                        >
+                          Fifth, Olympia
+                        </p>
+                      </div>
+                      <div class="flex gap-[100px]">
+                        <div class="">
+                          <p
+                            class="text-base group-hover:text-white transition-colors"
+                          >
+                            Floors:
+                          </p>
+                          <p
+                            class="text-[40px] mt-3 group-hover:text-white transition-colors"
+                          >
+                            3
+                          </p>
+                        </div>
+                        <div class="">
+                          <p
+                            class="text-base group-hover:text-white transition-colors"
+                          >
+                            Rooms:
+                          </p>
+                          <p
+                            class="text-[40px] mt-3 group-hover:text-white transition-colors"
+                          >
+                            11
+                          </p>
+                        </div>
+                        <div class="">
+                          <p
+                            class="text-base group-hover:text-white transition-colors"
+                          >
+                            Area:
+                          </p>
+                          <p
+                            class="text-[40px] mt-3 group-hover:text-white transition-colors"
+                          >
+                            2km <sup>2</sup>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="py-10 group relative block">
+                    <div
+                      class="absolute top-0 left-0 w-full h-0 bg-[#24138B] group-hover:h-full transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)] z-[1]"
+                    ></div>
+                    <img
+                      class="absolute w-[392px] [clip-path:inset(0_100%_0_0)] group-hover:[clip-path:inset(0_0_0_0)] transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)] top-1/2 -translate-y-1/2 left-[30%] pointer-events-none z-10"
+                      src="./images/content/table-portfolio.png"
+                      alt=""
+                    />
+                    <div
+                      class="container flex items-center justify-between relative z-[2]"
+                    >
+                      <div
+                        class="transition-all group-hover:pl-[34px] duration-500 ease-[cubic-bezier(.77,.14,.11,.88)]"
+                      >
+                        <p
+                          class="text-[#9D9D9D] text-sm uppercase group-hover:text-white transition-colors"
+                        >
+                          project
+                        </p>
+                        <p
+                          class="max-w-[223px] uppercase text-[27px] leading-none mt-3 group-hover:text-white transition-colors"
+                        >
+                          Fifth, Olympia
+                        </p>
+                      </div>
+                      <div class="flex gap-[100px]">
+                        <div class="">
+                          <p
+                            class="text-base group-hover:text-white transition-colors"
+                          >
+                            Floors:
+                          </p>
+                          <p
+                            class="text-[40px] mt-3 group-hover:text-white transition-colors"
+                          >
+                            3
+                          </p>
+                        </div>
+                        <div class="">
+                          <p
+                            class="text-base group-hover:text-white transition-colors"
+                          >
+                            Rooms:
+                          </p>
+                          <p
+                            class="text-[40px] mt-3 group-hover:text-white transition-colors"
+                          >
+                            11
+                          </p>
+                        </div>
+                        <div class="">
+                          <p
+                            class="text-base group-hover:text-white transition-colors"
+                          >
+                            Area:
+                          </p>
+                          <p
+                            class="text-[40px] mt-3 group-hover:text-white transition-colors"
+                          >
+                            2km <sup>2</sup>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div x-show="tab === 'card'" class="container">
+                <article class="grid md:grid-cols-2 gap-5 md:gap-6 items-end">
+                  <div
+                    data-cursor-text="View"
+                    class="lg:order-2 cursor-pointer img__wrapper h:lg-[740px] w-[740px]"
+                  >
+                    <img
+                      class="--parallaxed-img h-full"
+                      src="./images/content/portfolio-1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="xl:pl-[94px] xl:pr-[157px]">
+                    <p class="uppercase text-[#9D9D9D] text-sm">project</p>
+                    <h3 class="text-[27px] mt-2 md:mt-3 uppercase">
+                      Hillcrest, Inglewood
+                    </h3>
+                    <p class="text-sm md:text-base mt-5 md:mt-10 leading-tight">
+                      The Views on 5th project is a 140-unit luxury mixed use
+                      multifamily project in Olympia, Washington’s Capital. The
+                      project sits on the isthmus between Capitol Lake and West
+                      Bay with spectacular 360-degree views of the downtown,
+                      lakes, and the Capitol Building. The property was acquired
+                      in December 2016 and was an existing office building, that
+                      was fully gutted and renovated in 2020 with additional
+                      units built surrounding the building. Construction
+                      commenced in 2018 and was completed in 2020. This is a
+                      joint venture with an experienced local developer and
+                      general contractor.
+                    </p>
+
+                    <div
+                      class="flex justify-between items-end mt-3 md:mt-10 xl:mt-[233px]"
+                    >
+                      <ul class="space-y-2 md:space-y-3 text-sm md:text-base">
+                        <li class="leading-none">Floors: 4</li>
+                        <li class="leading-none">Rooms: 25</li>
+                        <li class="leading-none">Area: 5 000 m2</li>
+                      </ul>
+
+                      <a class="underline md:hidden text-sm" href="#"
+                        >SHOW MORE</a
+                      >
+                    </div>
+                  </div>
+                </article>
+
+                <div class="a-line mt-[184px]"></div>
+                <article
+                  class="grid md:grid-cols-2 gap-5 md:gap-6 items-end mt-[188px] md:mt-[27px]"
+                >
+                  <div
+                    data-cursor-text="View"
+                    class="cursor-pointer img__wrapper h:lg-[740px] w-[740px]"
+                  >
+                    <img
+                      class="--parallaxed-img h-full"
+                      src="./images/content/portfolio-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="xl:pl-[114px] xl:pr-[137px]">
+                    <p class="uppercase text-[#9D9D9D] text-sm">project</p>
+                    <h3 class="text-[27px] mt-2 md:mt-3 uppercase">
+                      Crossroads on Crosby
+                    </h3>
+                    <p class="text-sm md:text-base mt-5 md:mt-10 leading-tight">
+                      The Views on 5th project is a 140-unit luxury mixed use
+                      multifamily project in Olympia, Washington’s Capital. The
+                      project sits on the isthmus between Capitol Lake and West
+                      Bay with spectacular 360-degree views of the downtown,
+                      lakes, and the Capitol Building. The property was acquired
+                      in December 2016 and was an existing office building, that
+                      was fully gutted and renovated in 2020 with additional
+                      units built surrounding the building. Construction
+                      commenced in 2018 and was completed in 2020. This is a
+                      joint venture with an experienced local developer and
+                      general contractor.
+                    </p>
+
+                    <div
+                      class="flex justify-between items-end mt-3 md:mt-10 xl:mt-[233px]"
+                    >
+                      <ul class="space-y-2 md:space-y-3 text-sm md:text-base">
+                        <li class="leading-none">Floors: 4</li>
+                        <li class="leading-none">Rooms: 25</li>
+                        <li class="leading-none">Area: 5 000 m2</li>
+                      </ul>
+
+                      <a class="underline md:hidden text-sm" href="#"
+                        >SHOW MORE</a
+                      >
+                    </div>
+                  </div>
+                </article>
+
+                <div class="a-line mt-[184px]"></div>
+
+                <article
+                  class="grid md:grid-cols-2 gap-5 md:gap-6 items-end mt-[188px] md:mt-[27px]"
+                >
+                  <div
+                    data-cursor-text="View"
+                    class="lg:order-2 cursor-pointer img__wrapper h:lg-[740px] w-[740px]"
+                  >
+                    <img
+                      class="--parallaxed-img h-full"
+                      src="./images/content/portfolio-1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="xl:pl-[94px] xl:pr-[157px]">
+                    <p class="uppercase text-[#9D9D9D] text-sm">project</p>
+                    <h3 class="text-[27px] mt-2 md:mt-3 uppercase">
+                      Hillcrest, Inglewood
+                    </h3>
+                    <p class="text-sm md:text-base mt-5 md:mt-10 leading-tight">
+                      The Views on 5th project is a 140-unit luxury mixed use
+                      multifamily project in Olympia, Washington’s Capital. The
+                      project sits on the isthmus between Capitol Lake and West
+                      Bay with spectacular 360-degree views of the downtown,
+                      lakes, and the Capitol Building. The property was acquired
+                      in December 2016 and was an existing office building, that
+                      was fully gutted and renovated in 2020 with additional
+                      units built surrounding the building. Construction
+                      commenced in 2018 and was completed in 2020. This is a
+                      joint venture with an experienced local developer and
+                      general contractor.
+                    </p>
+
+                    <div
+                      class="flex justify-between items-end mt-3 md:mt-10 xl:mt-[233px]"
+                    >
+                      <ul class="space-y-2 md:space-y-3 text-sm md:text-base">
+                        <li class="leading-none">Floors: 4</li>
+                        <li class="leading-none">Rooms: 25</li>
+                        <li class="leading-none">Area: 5 000 m2</li>
+                      </ul>
+
+                      <a class="underline md:hidden text-sm" href="#"
+                        >SHOW MORE</a
+                      >
+                    </div>
+                  </div>
+                </article>
+
+                <div class="a-line mt-[184px]"></div>
+
+                <article
+                  class="grid md:grid-cols-2 gap-5 md:gap-6 items-end mt-[188px] md:mt-[27px]"
+                >
+                  <div
+                    data-cursor-text="View"
+                    class="cursor-pointer img__wrapper h:lg-[740px] w-[740px]"
+                  >
+                    <img
+                      class="--parallaxed-img h-full"
+                      src="./images/content/portfolio-1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="xl:pl-[114px] xl:pr-[137px]">
+                    <p class="uppercase text-[#9D9D9D] text-sm">project</p>
+                    <h3 class="text-[27px] mt-2 md:mt-3 uppercase">
+                      Hillcrest, Inglewood
+                    </h3>
+                    <p class="text-sm md:text-base mt-5 md:mt-10 leading-tight">
+                      The Views on 5th project is a 140-unit luxury mixed use
+                      multifamily project in Olympia, Washington’s Capital. The
+                      project sits on the isthmus between Capitol Lake and West
+                      Bay with spectacular 360-degree views of the downtown,
+                      lakes, and the Capitol Building. The property was acquired
+                      in December 2016 and was an existing office building, that
+                      was fully gutted and renovated in 2020 with additional
+                      units built surrounding the building. Construction
+                      commenced in 2018 and was completed in 2020. This is a
+                      joint venture with an experienced local developer and
+                      general contractor.
+                    </p>
+
+                    <div
+                      class="flex justify-between items-end mt-3 md:mt-10 xl:mt-[233px]"
+                    >
+                      <ul class="space-y-2 md:space-y-3 text-sm md:text-base">
+                        <li class="leading-none">Floors: 4</li>
+                        <li class="leading-none">Rooms: 25</li>
+                        <li class="leading-none">Area: 5 000 m2</li>
+                      </ul>
+
+                      <a class="underline md:hidden text-sm" href="#"
+                        >SHOW MORE</a
+                      >
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div x-show="tab === 'map'" class="container">
+                <div
+                  class="grid md:grid-cols-2 gap-6 lg:gap-16 xl:gap-32"
+                  id="map-target"
+                >
+                  <div class="md:order-2">
+                    <div id="map" class="w-full h-[466px] lg:h-[950px]"></div>
+                    <div class="justify-end mt-6 gap-12 hidden lg:flex">
+                      <button type="button" id="zoom-inc">
+                        <svg
+                          width="23"
+                          height="23"
+                          viewBox="0 0 23 23"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <line
+                            y1="11.4766"
+                            x2="23"
+                            y2="11.4766"
+                            stroke="#303030"
+                          />
+                          <line
+                            x1="11.5"
+                            y1="-2.18557e-08"
+                            x2="11.5"
+                            y2="23"
+                            stroke="#303030"
+                          />
+                        </svg>
+                      </button>
+                      <button type="button" id="zoom-dec">
+                        <svg
+                          width="23"
+                          height="1"
+                          viewBox="0 0 23 1"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <line y1="0.5" x2="23" y2="0.5" stroke="#303030" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="md:order-1">
+                    <div class="map-list-item" data-map-item="1">
+                      <div class="map-list-item__header">
+                        <h4 class="map-list-item__heading">
+                          <span class="text-sm">01</span>
+                          Fifth, <br />
+                          Olympia
+                        </h4>
+
+                        <ul class="map-list-item__info">
+                          <li>Floors: 4</li>
+                          <li>Rooms: 25</li>
+                          <li>Area: 5 000 m2</li>
+                        </ul>
+                      </div>
+
+                      <p class="map-list-item__address">
+                        24151 Ventura Blvd., Suite 350 <br />
+                        Calabasas, CA 91302
+                      </p>
+                    </div>
+                    <div class="map-list-item" data-map-item="2">
+                      <div class="map-list-item__header">
+                        <h4 class="map-list-item__heading">
+                          <span class="text-sm">02</span>
+                          Crossroads <br />
+                          on Crosby
+                        </h4>
+
+                        <ul class="map-list-item__info">
+                          <li>Floors: 4</li>
+                          <li>Rooms: 25</li>
+                          <li>Area: 5 000 m2</li>
+                        </ul>
+                      </div>
+
+                      <p class="map-list-item__address">
+                        24151 Ventura Blvd., Suite 350 <br />
+                        Calabasas, CA 91302
+                      </p>
+                    </div>
+                    <div class="map-list-item" data-map-item="3">
+                      <div class="map-list-item__header">
+                        <h4 class="map-list-item__heading">
+                          <span class="text-sm">03</span>
+                          Hillcrest, <br />
+                          Inglewood
+                        </h4>
+
+                        <ul class="map-list-item__info">
+                          <li>Floors: 4</li>
+                          <li>Rooms: 25</li>
+                          <li>Area: 5 000 m2</li>
+                        </ul>
+                      </div>
+
+                      <p class="map-list-item__address">
+                        24151 Ventura Blvd., Suite 350 <br />
+                        Calabasas, CA 91302
+                      </p>
+                    </div>
+                    <div class="map-list-item" data-map-item="4">
+                      <div class="map-list-item__header">
+                        <h4 class="map-list-item__heading">
+                          <span class="text-sm">04</span>
+                          Hillcrest, <br />
+                          Inglewood
+                        </h4>
+
+                        <ul class="map-list-item__info">
+                          <li>Floors: 4</li>
+                          <li>Rooms: 25</li>
+                          <li>Area: 5 000 m2</li>
+                        </ul>
+                      </div>
+
+                      <p class="map-list-item__address">
+                        24151 Ventura Blvd., Suite 350 <br />
+                        Calabasas, CA 91302
+                      </p>
+                    </div>
+                    <div class="map-list-item" data-map-item="5">
+                      <div class="map-list-item__header">
+                        <h4 class="map-list-item__heading">
+                          <span class="text-sm">05</span>
+                          Fifth, <br />
+                          Olympia
+                        </h4>
+
+                        <ul class="map-list-item__info">
+                          <li>Floors: 4</li>
+                          <li>Rooms: 25</li>
+                          <li>Area: 5 000 m2</li>
+                        </ul>
+                      </div>
+
+                      <p class="map-list-item__address">
+                        24151 Ventura Blvd., Suite 350 <br />
+                        Calabasas, CA 91302
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section cta -->
+          <section class="container mt-[253px] md:mt-[396px]">
+            <div class="max-w-[860px] mx-auto">
+              <div class="lg:col-start-2 lg:col-end- text-center">
+                <h2
+                  class="text-[40px] lg:text-[69px] leading-none text-dark uppercase"
+                >
+                  Interested in becoming an Investment Partner?
+                </h2>
+                <p
+                  class="max-w-[672px] mx-auto text-sm md:text-lg mt-5 md:mt-[38px] text-[#A1A1AA] leading-tight"
+                >
+                  Contact us for a free review of your current portfolio to see
+                  if what we offer is a good fit for your long-term investment
+                  strategies. Helping our clients reach their individual
+                  investment goals with real estate is our primary focus.
+                </p>
+
+                <div class="mt-8 lg:mt-12">
+                  <a
+                    href="#"
+                    class="button border-[#d4d4d4] js-magnet-btn js-hero-animation"
+                  >
+                    <span class="button__fill"></span>
+                    <span class="js-magnet-btn-text">Become an investor</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Section cta end -->
+
+          <!-- Footer start -->
+          <footer class="footer mt-56 md:mt-80">
+            <div class="container">
+              <div class="pb-5 border-b border-gray-200">
+                <a href="./contact.html" class="footer__heading">
+                  Get in touch
+
+                  <svg
+                    class="footer__icon"
+                    width="64"
+                    height="64"
+                    viewBox="0 0 64 64"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask
+                      id="a"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y=".5"
+                      width="64"
+                      height="64"
+                      fill="#000"
+                    >
+                      <path fill="#fff" d="M0 .5h64v64H0z" />
+                      <path d="m5 59.5 56-56Zm56-56H11.456Zm0 0v49.544Z" />
+                    </mask>
+                    <path
+                      d="M2.879 57.379.757 59.5 5 63.743l2.121-2.122L2.88 57.38ZM61 3.5h3v-3h-3v3ZM11.456.5h-3v6h3v-6ZM58 53.044v3h6v-3h-6ZM7.121 61.621l37.674-37.674L58 10.743l3.774-3.774 1.003-1.002a883.796 883.796 0 0 0 .323-.324l.017-.016.004-.004.001-.001L61 3.5l-2.122-2.121v.001l-.005.004-.016.017-.066.065-.258.258-1.002 1.003L53.757 6.5 40.553 19.705 2.879 57.379 7.12 61.62ZM61 .5H11.456v6H61v-6Zm-3 3v49.544h6V3.5h-6Z"
+                      fill="currentColor"
+                      mask="url(#a)"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <div class="mt-16 lg:mt-56">
+                <div class="grid lg:grid-cols-8 gap-16 lg:gap-8 items-end">
+                  <div class="lg:col-span-3 xl:col-span-2">
+                    <p class="text-sm leading-none text-zinc-500">
+                      BRANDON, MS
+                    </p>
+                    <ul class="mt-3">
+                      <li class="footer__link">(888) 936-7249</li>
+                      <li class="footer__link">Info@Forbix.com</li>
+                    </ul>
+                  </div>
+                  <div class="lg:col-span-3 xl:col-span-2">
+                    <p class="text-sm leading-none text-zinc-500">
+                      LOS ANGELES, CA
+                    </p>
+                    <ul class="mt-3">
+                      <li class="footer__link">(601) 965-9677</li>
+                      <li class="footer__link">Info@Forbix.com</li>
+                    </ul>
+                  </div>
+                  <div class="lg:col-span-2 xl:col-span-4">
+                    <div
+                      class="flex justify-between gap-4 md:flex-col lg:items-end"
+                    >
+                      <a class="footer__social-link" target="_blank" href="#">
+                        INSTAGRAM
+                      </a>
+                      <a class="footer__social-link" target="_blank" href="#">
+                        FACEBOOK
+                      </a>
+                      <a class="footer__social-link" target="_blank" href="#">
+                        TWITTER
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- Footer end -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+:root {
+  --color-primary: #24138b;
+  --color-dark: #303030;
+  --color-gray: #7c7c7c;
+  --color-gray-100: #d4d4d4;
+  --color-text-gray: #a3a3a3;
+  --app-height: 100vh;
+}
+
+$spacer: 4px;
+$spacers: (
+  0: 0,
+  1: $spacer,
+  2: $spacer * 2,
+  3: $spacer * 3,
+  4: $spacer * 4,
+  5: $spacer * 5,
+  6: $spacer * 6,
+  40: $spacer * 40,
+);

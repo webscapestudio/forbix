@@ -1,0 +1,59 @@
+.map-list-item {
+  @apply py-8 md:py-[52px] border-b border-gray-200 cursor-pointer relative transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)];
+
+  &__header {
+    @apply flex flex-col lg:flex-row gap-5 relative justify-between z-[2] w-full;
+  }
+
+  &__heading {
+    @apply text-xl md:text-[27px] leading-none uppercase flex gap-10 transition-colors;
+  }
+
+  &::before {
+    content: "";
+    @apply absolute top-0 left-0 w-full h-0 bg-[#24138B] transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)] z-[1];
+  }
+
+  &.active {
+    @apply pl-6;
+  }
+
+  &.active::before {
+    @apply h-full;
+  }
+
+  &:hover .map-list-item__address {
+    @apply text-white;
+  }
+
+  &.active &__heading,
+  &.active &__address,
+  &.active &__info {
+    @apply text-white;
+  }
+
+  &:hover:not(.active) &__heading {
+    @apply text-primary;
+  }
+
+  // &:hover &__info,
+  // &.active &__info {
+  //   @apply text-black;
+  // }
+
+  &__info {
+    @apply space-y-2 w-36 flex-shrink-0 ml-14 lg:ml-0 transition-colors;
+
+    li {
+      color: inherit;
+    }
+  }
+
+  &__address {
+    @apply ml-14 transition-all duration-500 overflow-hidden z-[2] relative  h-0 ease-[cubic-bezier(.77,.14,.11,.88)];
+  }
+
+  &.active &__address {
+    @apply h-11 mt-6;
+  }
+}

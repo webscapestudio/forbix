@@ -1,0 +1,26 @@
+.parallax-block {
+  width: 100%;
+  display: block;
+  // background: var(--color-primary);
+  overflow: hidden;
+  position: relative;
+
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    will-change: auto;
+    object-fit: cover;
+
+    &--text {
+      @apply relative lg:absolute;
+    }
+
+    @include media-down(lg) {
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

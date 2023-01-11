@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+html {
+  font-size: 16px;
+  text-size-adjust: 100%;
+  text-rendering: optimizeSpeed;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Questrial", sans-serif;
+  color: var(--color-dark);
+  line-height: 1.4;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  background-color: var(--color-dark);
+  letter-spacing: -0.03em;
+
+  min-width: 320px;
+  // scroll-behavior: smooth;
+}
+
+[data-barba="wrapper"] {
+  background-color: #f5f5f5;
+}
+
+.page-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 50;
+  background-color: var(--color-dark);
+  clip-path: circle(30% at -80% 50%);
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  pointer-events: none;
+  display: flex;
+}
+
+.list-square li {
+  @apply relative pl-5;
+
+  &:before {
+    content: "";
+    @apply w-2 h-2 bg-primary absolute left-0 top-[3px] md:top-2;
+  }
+}
+
+.text-more {
+  @apply h-[308px] md:h-[235px] overflow-hidden relative transition-all;
+
+  &::after {
+    content: "";
+    @apply h-[160px] md:h-[130px] absolute left-0 bottom-0 right-0 transition-all;
+    background: linear-gradient(
+      0deg,
+      rgba(245, 245, 245, 1) 30%,
+      rgba(245, 245, 245, 0.8) 80%,
+      rgba(245, 245, 245, 0.4) 90%,
+      rgba(245, 245, 245, 0) 100%
+    );
+  }
+
+  &.active::after {
+    @apply h-0;
+  }
+}
+
+.project-swiper {
+  overflow: visible !important;
+
+  img {
+    @apply grayscale transition-all duration-300;
+  }
+
+  img:hover {
+    @apply grayscale-0;
+  }
+
+  .swiper-slide-active img {
+    @apply rotate-0 scale-100 grayscale-0;
+  }
+
+  .swiper-slide-prev img {
+    @apply rotate-6 scale-[0.8];
+  }
+
+  .swiper-slide-next img {
+    @apply -rotate-6 scale-[0.8];
+  }
+}

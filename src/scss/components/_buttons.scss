@@ -1,0 +1,53 @@
+// Primary button
+.button {
+  @apply text-dark text-sm rounded-full border border-gray-200 py-4 px-6 h-12 inline-flex items-center justify-center min-w-[132px] relative overflow-hidden lg:hover:text-white whitespace-nowrap;
+
+  &--dark {
+    border-color: #d4d4d4;
+  }
+
+  &__fill {
+    @apply bg-primary absolute;
+    width: 150%;
+    height: 200%;
+    border-radius: 50%;
+    top: -50%;
+    left: -25%;
+    will-change: transform;
+    z-index: -1;
+
+    @apply hidden lg:block;
+  }
+}
+
+// Button round
+.button-round {
+  width: 124px;
+  height: 124px;
+  svg {
+    @apply hidden;
+  }
+
+  @apply text-dark text-base inline-flex items-center justify-center border border-gray-200 rounded-full;
+
+  @screen lg {
+    width: 156px;
+    height: 156px;
+    svg {
+      @apply inline-block;
+    }
+
+    @apply border-none;
+  }
+}
+
+.svg-indicator {
+  @apply absolute left-0 top-0 w-full h-full;
+}
+.svg-indicator-track {
+  @apply stroke-gray-300;
+}
+
+.svg-indicator-indication {
+  @apply stroke-dark;
+}

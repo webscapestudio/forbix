@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forbix | Investment company</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/content/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/content/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/content/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/content/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./images/content/favicon/safari-pinned-tab.svg"
+      color="#000000"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <div class="scroller">
+      <!-- Preloader start -->
+      <div data-barba="wrapper">
+        <div class="preloader">
+          <div class="preloader__content">
+            <p>Loading</p>
+            <p><span id="preloader-percent">0</span> %</p>
+          </div>
+        </div>
+        <!-- Preloader end -->
+
+        <!-- Page transition -->
+        <div class="page-transition">
+          <img src="./images/content/forbix-logo-light.svg" alt="" />
+        </div>
+        <!-- Page transition end -->
+
+        <!-- Navbar start -->
+        <div class="container relative">
+          <button class="navbar-burger">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <div class="navbar">
+          <div class="container">
+            <a class="navbar__logo" href="./index.html">
+              <img src="./images/content/logo-light.svg" alt="" />
+            </a>
+          </div>
+
+          <div class="navbar__list">
+            <div class="navbar__list-item">
+              <div class="container" data-cursor-arrow>
+                <a href="./commercial.html" class="navbar__list-link">
+                  <span class="navbar__list-num">01/</span>
+                  <span class="navbar__list-text">Commercial loans</span>
+                  <!-- <img
+                  class="navbar__list-img"
+                  src="./images/content/nav-img.png"
+                  alt=""
+                />
+               -->
+                  <video
+                    class="navbar__list-img"
+                    muted
+                    autoplay
+                    src="./videos/home.mp4"
+                  ></video>
+                </a>
+              </div>
+            </div>
+            <div class="navbar__list-item">
+              <div class="container" data-cursor-arrow>
+                <a href="./portfolio.html" class="navbar__list-link">
+                  <span class="navbar__list-num">02/</span>
+                  <span class="navbar__list-text"> Real estate investment</span>
+                  <!-- <img class="navbar__list-img" src="./images/content/nav-img.png" alt="" /> -->
+                  <video
+                    class="navbar__list-img"
+                    muted
+                    autoplay
+                    src="./videos/home.mp4"
+                  ></video>
+                </a>
+              </div>
+            </div>
+            <div class="navbar__list-item">
+              <div class="container" data-cursor-arrow>
+                <a href="./residential.html" class="navbar__list-link">
+                  <span class="navbar__list-num">03/</span>
+                  <span class="navbar__list-text">Residential loans</span>
+                  <!-- <img class="navbar__list-img" src="./images/content/nav-img.png" alt="" /> -->
+                  <video
+                    class="navbar__list-img"
+                    muted
+                    autoplay
+                    src="./videos/home.mp4"
+                  ></video>
+                </a>
+              </div>
+            </div>
+            <div class="navbar__list-item">
+              <div class="container" data-cursor-arrow>
+                <a href="about.html" class="navbar__list-link">
+                  <span class="navbar__list-num">04/</span>
+                  <span class="navbar__list-text">About us</span>
+                  <!-- <img class="navbar__list-img" src="./images/content/nav-img.png" alt="" /> -->
+                  <video
+                    class="navbar__list-img"
+                    muted
+                    autoplay
+                    src="./videos/home.mp4"
+                  ></video>
+                </a>
+              </div>
+            </div>
+            <div class="navbar__list-item">
+              <div class="container" data-cursor-arrow>
+                <a href="./contact.html" class="navbar__list-link">
+                  <span class="navbar__list-num">05/</span>
+                  <span class="navbar__list-text">Contacts</span>
+                  <!-- <img class="navbar__list-img" src="./images/content/nav-img.png" alt="" /> -->
+                  <video
+                    class="navbar__list-img"
+                    muted
+                    autoplay
+                    src="./videos/home.mp4"
+                  ></video>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="navbar__footer">
+              <a href="#">Instagram</a>
+              <a href="#">Facebook</a>
+              <a href="#">Twitter</a>
+            </div>
+          </div>
+        </div>
+        <!-- Navbar start -->
+
+        <div data-barba="container" data-barba-namespace="home">
+          <div class="container" id="relative-container">
+            <a href="./index.html" class="logo">
+              <svg
+                width="98"
+                viewBox="0 0 97 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="logo-path"
+                  d="M0 22.7905H4.0678V13.794H10.8374V9.84495H4.0678V4.76752H11.1639V0.818501H0L0 22.7905Z"
+                  fill="#292B32"
+                />
+                <path
+                  class="logo-path"
+                  d="M24.3157 19.3762C20.0698 19.3762 16.8334 15.9912 16.8334 11.8343C16.8334 7.73678 20.0401 4.38165 24.3454 4.38165C28.6508 4.38165 31.8574 7.73678 31.8574 11.8343C31.8574 15.9318 28.6805 19.3762 24.3157 19.3762ZM24.3454 0.432632C17.7835 0.432632 12.7656 5.56925 12.7656 11.9234C12.7656 18.2777 17.8132 23.3252 24.3454 23.3252C30.8777 23.3252 35.9253 18.2777 35.9253 11.9234C35.9253 5.56925 30.9074 0.432632 24.3454 0.432632"
+                  fill="#292B32"
+                />
+                <path
+                  class="logo-path"
+                  d="M50.0536 7.7965C50.0536 5.68836 49.1925 0.81899 41.7992 0.81899H35.4453V4.75958H39.5463V4.76782H41.918C42.868 4.76782 45.9858 4.8571 45.9858 8.03405C45.9858 11.2112 42.868 11.3001 41.918 11.3001H39.5463V14.6851H39.5723L45.2731 22.791H50.2912L44.1152 14.6851C47.7079 14.3288 50.0536 11.3001 50.0536 7.7965Z"
+                  fill="#292B32"
+                />
+                <path
+                  class="logo-path"
+                  d="M59.5618 18.8417H56.9194V13.2298H59.5618C62.7388 13.2298 63.0357 15.249 63.0357 16.0803C63.0357 18.812 60.0367 18.8417 59.5618 18.8417ZM56.9194 4.76752H58.8196C59.7101 4.76752 61.6996 4.88649 61.6996 7.02433C61.6996 7.58834 61.4918 9.28094 58.8196 9.28094H56.9194V4.76752ZM63.3624 10.795C63.9563 10.4683 65.7674 9.34033 65.7674 6.6086C65.7674 0.848387 59.5024 0.818694 58.1365 0.818694H52.8516V22.7905H58.3443C65.3812 22.7905 67.1035 19.2869 67.1035 16.11C67.1035 13.6455 65.7378 11.5967 63.3624 10.795"
+                  fill="#292B32"
+                />
+                <path
+                  class="logo-path"
+                  d="M69.6172 22.7905H73.685V0.900106H69.6172V22.7905Z"
+                  fill="#292B32"
+                />
+
+                <path
+                  class="logo-path"
+                  d="M96.0055 0.903645H91.3005L86.1248 8.46125L80.9786 0.903645H76.2734L83.7724 11.784L76.2734 22.6646H80.9786L86.1248 15.1364L91.3005 22.6646H96.0055L88.4774 11.784L96.0055 0.903645Z"
+                  fill="#292B32"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Hero start -->
+          <header class="container pt-[114px] md:pt-[197px]">
+            <h1 class="heading-main text-center">
+              <span class="header-animation">DIRECT LENDER</span><br />
+              <span class="header-animation">& INVESTMENT</span><br />
+              <span class="header-animation">FIRM</span>
+            </h1>
+
+            <p
+              class="header-animation !flex justify-center mt-6 text-[10px] md:text-base ml-[22px] md:ml-0 lg:-ml-[104px]"
+            >
+              FORBIX is California`s <br />
+              fastest-growing public <br />
+              company
+            </p>
+
+            <div class="mt-[77px] lg:mt-[129px]">
+              <div
+                class="header-animation !flex justify-center flex-wrap gap-3 lg:gap-5"
+              >
+                <a href="./commercial.html" class="button js-magnet-btn">
+                  <span class="button__fill"></span>
+                  <span class="js-magnet-btn-text">Commercial</span>
+                </a>
+                <a href="./residential.html" class="button js-magnet-btn">
+                  <span class="button__fill"></span>
+                  <span class="js-magnet-btn-text">Residential loans</span>
+                </a>
+                <a href="./portfolio.html" class="button js-magnet-btn">
+                  <span class="button__fill"></span>
+                  <span class="js-magnet-btn-text">Real estate investment</span>
+                </a>
+                <a href="./team.html" class="button js-magnet-btn">
+                  <span class="button__fill"></span>
+                  <span class="js-magnet-btn-text">Team</span>
+                </a>
+              </div>
+            </div>
+          </header>
+          <!-- Hero end -->
+
+          <!-- Home video start -->
+          <div class="container mt-10 lg:mt-[98px]">
+            <!-- Main video -->
+            <div class="header-animation">
+              <div class="video-wrapper" id="video-wrapper">
+                <div id="video-overlay" class="video-overlay"></div>
+
+                <video id="video" playsinline muted="muted" loop>
+                  <source src="./videos/home.mp4" type="video/mp4" />
+                  <source src="./videos/home.webm" type="video/webm" />
+                </video>
+
+                <div
+                  class="video-controls"
+                  data-cursor="-hidden"
+                  id="video-controls"
+                >
+                  <div class="video-progress">
+                    <progress id="progress-bar" value="0" min="0"></progress>
+                    <input
+                      class="seek"
+                      id="seek"
+                      value="0"
+                      min="0"
+                      type="range"
+                      step="1"
+                    />
+                    <div class="seek-tooltip" id="seek-tooltip">00:00</div>
+                  </div>
+                  <div class="video-time">
+                    <time id="time-elapsed">00:00</time>
+                    <span> / </span>
+                    <time id="duration">00:00</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Main video end -->
+          </div>
+          <!-- Home video end -->
+
+          <!-- About section start -->
+          <div class="container mt-12 header-animation !block">
+            <div class="grid md:grid-cols-2 gap-20 md:gap-x-6">
+              <div>
+                <div class="grid grid-cols-2">
+                  <p class="text-lg">OUR MISSION</p>
+                  <p class="max-w-sm tracking-[-0.03em] leading-tight">
+                    It is our mission to properly educate and advise all of our
+                    clients to the appropriate loan and investment products to
+                    achieve the clients short term and long term goals. The
+                    first step in the process is for us to listen to what you
+                    want to achieve and offer solutions to get you there.
+                  </p>
+                </div>
+
+                <div class="a-line my-8" aria-hidden="true"></div>
+
+                <div class="grid grid-cols-2">
+                  <p class="text-lg">OUR VISION</p>
+                  <p class="max-w-sm tracking-[-0.03em] leading-tight">
+                    Thinking outside the box is a 2D obsolete advisory cliché.
+                    Welcome to our CUBE, a 4D experience into your real estate
+                    future, encompassing residential, commercial, construction
+                    and development services, tailored to you.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex justify-center items-center">
+                <a
+                  href="./about.html"
+                  class="button-round relative js-magnet-btn"
+                >
+                  <span class="js-magnet-btn-text">About us</span>
+                  <svg class="svg-indicator">
+                    <circle class="svg-indicator-track" />
+                    <circle class="svg-indicator-indication" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- About section end -->
+
+          <!-- String section start -->
+          <div class="mt-[255px] lg:mt-[500px]">
+            <section class="marquee">
+              <div class="marquee__inner" aria-hidden="true" ref="inner">
+                <div class="marquee__part">Strong. Resilient. Growing.</div>
+                <div class="marquee__part">Strong. Resilient. Growing.</div>
+                <div class="marquee__part">Strong. Resilient. Growing.</div>
+                <div class="marquee__part">Strong. Resilient. Growing.</div>
+                <div class="marquee__part">Strong. Resilient. Growing.</div>
+                <div class="marquee__part">Strong. Resilient. Growing.</div>
+              </div>
+            </section>
+          </div>
+          <!-- String section end -->
+
+          <!-- Section info start -->
+          <div class="container mt-72 lg:mt-96">
+            <div class="grid gap-8 lg:grid-cols-8">
+              <div class="lg:col-start-5 lg:col-end-9">
+                <p
+                  class="text-[34px] lg:text-[40px] leading-tight max-w-[586px] tracking-[-0.04em]"
+                >
+                  FORBIX is California’s fastest-growing public company
+                  according to 2021 data and one of the largest federal
+                  corporations in proptech and development.
+                </p>
+                <p class="mt-8 lg:mt-16 max-w-xs">
+                  We focus on the fundamentals - a balanced capital structure,
+                  sample liquidity, favorable credit metrics and long - term
+                  value for our shareholders.
+                </p>
+              </div>
+            </div>
+
+            <div class="grid gap-8 lg:grid-cols-8 mt-20 lg:mt-32">
+              <div class="lg:col-start-5 lg:col-end-9">
+                <h4 class="text-[180px] leading-none lg:text-[318px]">28,4</h4>
+                <div class="ml-2 lg:ml-[14px]">
+                  <p class="text-[28px] lg:text-[34px]">mil m2</p>
+                  <p class="text-sm lg:text-base leading-none">
+                    Revenue 1H 2022
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="a-line mt-16 lg:mt-28"></div>
+            <div class="grid gap-8 grid-cols-8 py-10">
+              <div class="col-start-5 col-end-9">
+                <div
+                  data-num="left"
+                  class="flex flex-col md:flex-row md:items-end gap-2 md:gap-8 will-change-auto"
+                >
+                  <h4 class="text-[90px] leading-none md:text-[200px]">50</h4>
+                  <div class="ml-1 md:ml-0 md:pb-8">
+                    <p class="text-[28px] lg:text-[34px]">bln DOL</p>
+                    <p class="text-sm lg:text-base leading-none">
+                      Assessment of a portfolio <br />
+                      of projects
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="a-line"></div>
+            <div class="grid gap-8 grid-cols-8 py-10">
+              <div class="col-start-2 col-end-9">
+                <div
+                  data-num="right"
+                  class="flex flex-col md:flex-row md:items-end gap-2 md:gap-8 will-change-auto"
+                >
+                  <h4 class="text-[90px] leading-none md:text-[200px]">63,3</h4>
+                  <div class="ml-1 md:ml-0 md:pb-8">
+                    <p class="text-[28px] lg:text-[34px]">bln DOL</p>
+                    <p class="text-sm lg:text-base leading-none">
+                      Assets valuation
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="a-line"></div>
+            <div class="grid gap-8 grid-cols-8 py-10">
+              <div class="col-start-5 col-end-9">
+                <div
+                  data-num="left"
+                  class="flex flex-col md:flex-row md:items-end gap-2 md:gap-8 will-change-auto"
+                >
+                  <h4 class="text-[90px] leading-none md:text-[200px]">43</h4>
+                  <div class="ml-1 md:ml-0 md:pb-8">
+                    <p class="text-[28px] lg:text-[34px]">bln DOL</p>
+                    <p class="text-sm lg:text-base leading-none">
+                      Include in the portfolio
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Section info end -->
+
+          <!-- Section portfolio start -->
+          <div class="container">
+            <section id="portfolio" class="section mt-[382px] lg:mt-[440px]">
+              <h2 class="heading-secondary">
+                Investment <br />
+                portfolio
+              </h2>
+
+              <!-- Case grid -->
+              <div class="mt-6 md:mt-12">
+                <!-- Case grid -->
+                <a
+                  href="./portfolio-details.html"
+                  data-cursor-text="View case"
+                  class="grid lg:grid-cols-8 items-center gap-4 lg:gap-6"
+                >
+                  <div class="lg:col-span-4 img__wrapper">
+                    <div class="parallax-block h-80 lg:h-[1000px]">
+                      <img
+                        class="parallax-block__item --parallaxed-img"
+                        src="images/content/cases/case-1.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="lg:col-start-6 lg:col-end-8">
+                    <p class="text-xs uppercase mb-3 text-[#A1A1AA]">Project</p>
+                    <h2
+                      class="text-4xl md:text-6xl leading-none uppercase text-dark"
+                    >
+                      Fifth, Olympia
+                    </h2>
+                    <p class="mt-8 lg:mt-14">
+                      Recent weeks have been dominated by people informing us of
+                      their housing preferences. We received a very enthusiastic
+                      response, which is why we want to give you an insight into
+                      the start of sales of Nieuw Bergen.
+                    </p>
+                  </div>
+                </a>
+                <!-- Case grid end -->
+
+                <!-- Case grid  -->
+                <div class="mt-[200px] lg:mt-[442px]">
+                  <a
+                    href="./portfolio-details.html"
+                    class="parallax-block h-80 lg:h-[650px]"
+                    data-cursor-text="View case"
+                  >
+                    <img
+                      class="parallax-block__item"
+                      src="images/content/cases/case-2.png"
+                      alt=""
+                    />
+                  </a>
+                  <div
+                    class="grid lg:grid-cols-8 mt-4 lg:mt-14 lg:gap-6 items-center"
+                  >
+                    <div>
+                      <p class="text-xs uppercase mb-3 text-[#A1A1AA]">
+                        Project
+                      </p>
+                      <h2
+                        class="text-4xl md:text-6xl leading-none uppercase text-dark"
+                      >
+                        Hillcrest, <br />
+                        Inglewood
+                      </h2>
+                    </div>
+                    <p class="mt-8 lg:mt-6 lg:col-start-5 lg:col-end-7">
+                      Recent weeks have been dominated by people informing us of
+                      their housing preferences. We received a very enthusiastic
+                      response, which is why we want to give you an insight into
+                      the start of sales of Nieuw Bergen.
+                    </p>
+                  </div>
+                </div>
+                <!-- Case grid end -->
+
+                <!-- Case grid -->
+                <div
+                  class="grid lg:grid-cols-8 gap-4 mt-[200px] lg:mt-[442px] lg:gap-6 items-center"
+                >
+                  <div class="lg:col-span-4">
+                    <a
+                      href="./portfolio-details.html"
+                      class="parallax-block h-80 lg:h-[650px]"
+                      data-cursor-text="View case"
+                    >
+                      <img
+                        class="parallax-block__item"
+                        src="images/content/cases/case-3.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="lg:col-start-6 lg:col-end-8">
+                    <p class="text-xs uppercase mb-3 text-[#A1A1AA]">Project</p>
+                    <h2
+                      class="text-4xl md:text-6xl leading-none uppercase text-dark"
+                    >
+                      Fifth, Olympia
+                    </h2>
+                    <p class="mt-8 lg:mt-14">
+                      Recent weeks have been dominated by people informing us of
+                      their housing preferences. We received a very enthusiastic
+                      response, which is why we want to give you an insight into
+                      the start of sales of Nieuw Bergen.
+                    </p>
+                  </div>
+                </div>
+                <!-- Case grid end -->
+                <!-- Case grid -->
+                <div
+                  class="grid lg:grid-cols-8 gap-4 mt-[200px] lg:mt-[442px] lg:gap-6 items-center"
+                >
+                  <div class="lg:col-start-2 lg:col-end-4 order-2 lg:order-1">
+                    <p class="text-xs uppercase mb-3 text-[#A1A1AA]">Project</p>
+                    <h2
+                      class="text-4xl md:text-6xl leading-none uppercase text-dark"
+                    >
+                      Fifth, Olympia
+                    </h2>
+                    <p class="mt-8 lg:mt-14">
+                      Recent weeks have been dominated by people informing us of
+                      their housing preferences. We received a very enthusiastic
+                      response, which is why we want to give you an insight into
+                      the start of sales of Nieuw Bergen.
+                    </p>
+                  </div>
+
+                  <div class="lg:col-start-5 lg:col-end-9 lg:order-2">
+                    <a
+                      href="./portfolio-details.html"
+                      class="parallax-block h-80 lg:h-[650px]"
+                      data-cursor-text="View case"
+                    >
+                      <img
+                        class="parallax-block__item"
+                        src="images/content/cases/case-3.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+                <!-- Case grid end -->
+
+                <div
+                  class="grid justify-center lg:grid-cols-8 gap-6 mt-14 lg:mt-44"
+                >
+                  <div class="lg:col-start-5 lg:col-span-4">
+                    <a
+                      href="./portfolio.html"
+                      class="button-round relative js-magnet-btn"
+                    >
+                      <span class="js-magnet-btn-text">View portfolio</span>
+                      <svg class="svg-indicator">
+                        <circle class="svg-indicator-track" />
+                        <circle class="svg-indicator-indication" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Section portfolio end -->
+
+            <!-- Concept section -->
+            <section class="section mt-[300px] lg:mt-[542px]" data-bg="#F5F5F5">
+              <div class="concept">
+                <p class="concept__text">
+                  The principals of Forbix have been financing, buying & selling
+                  <a href="#">real estate as well as managing real</a>
+                  estate for the past 20 years. We believe in a diversified real
+                  estate <a href="#">portfolio</a> and
+                  <a href="#">practice.</a>
+                </p>
+
+                <img
+                  class="concept__img"
+                  src="./images/content/concept-1.png"
+                  alt=""
+                />
+                <img
+                  class="concept__img"
+                  src="./images/content/concept-2.png"
+                  alt=""
+                />
+                <img
+                  class="concept__img"
+                  src="./images/content/concept-3.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="mt-12 md:mt-20">
+                <div class="grid justify-center md:grid-cols-2">
+                  <p class="md:col-start-2">
+                    Our inspired solutions have helped <br />
+                    shape modern acoustic design.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <!-- Concept section end -->
+          </div>
+          <!-- Section portfolio end -->
+
+          <!-- Section services start -->
+          <section class="container mt-40 lg:mt-[400px]">
+            <div class="grid items-center md:grid-cols-8 gap-6">
+              <div class="md:col-span-4">
+                <h2 class="uppercase text-xl md:text-3xl leading-tight">
+                  Services
+                </h2>
+              </div>
+              <div class="md:col-span-4">
+                <p class="hidden md:block text-zinc-400">Overview</p>
+              </div>
+            </div>
+
+            <div class="a-line mt-8 md:mt-10" aria-hidden="true"></div>
+
+            <article class="py-9 grid xl:grid-cols-2 gap-6 md:py-20">
+              <div class="flex flex-col">
+                <h3
+                  class="text-[56px] lg:text-[88px] leading-none flex flex-col xl:flex-row gap-5 xl:gap-10 flex-1 uppercase"
+                >
+                  <span class="text-sm md:text-base md:mt-2">01/</span>
+                  COMMERCIAL LOANS
+                </h3>
+                <div class="grid grid-cols-2 md:block xl:ml-[70px]">
+                  <p class="mt-6 max-w-[300px]">
+                    We focus on the fundamentals - a balanced capital structure,
+                    sample liquidity.
+                  </p>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 xl:block">
+                <div class="col-start-2">
+                  <p class="text-base md:text-[40px] leading-tight">
+                    FORBIX is California’s fastest-growing public company
+                    according to 2021 data and one of the largest federal
+                    corporations in proptech and development.
+                  </p>
+                  <div class="mt-6 xl:mt-20">
+                    <a href="./commercial.html" class="button js-magnet-btn">
+                      <span class="button__fill"></span>
+                      <span class="js-magnet-btn-text">Read more</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <div class="a-line" aria-hidden="true"></div>
+
+            <article class="py-9 grid xl:grid-cols-2 gap-6 md:py-20">
+              <div class="flex flex-col">
+                <h3
+                  class="text-[56px] lg:text-[88px] leading-none flex flex-col xl:flex-row gap-5 xl:gap-10 flex-1 uppercase"
+                >
+                  <span class="text-sm md:text-base md:mt-2">01/</span>
+                  residential LOANS
+                </h3>
+                <div class="grid grid-cols-2 md:block xl:ml-[70px]">
+                  <p class="mt-6 max-w-[300px]">
+                    We focus on the fundamentals - a balanced capital structure,
+                    sample liquidity.
+                  </p>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 xl:block">
+                <div class="col-start-2">
+                  <p class="text-base md:text-[40px] leading-tight">
+                    FORBIX is California’s fastest-growing public company
+                    according to 2021 data and one of the largest federal
+                    corporations in proptech and development.
+                  </p>
+                  <div class="mt-6 xl:mt-20">
+                    <a href="./residential.html" class="button js-magnet-btn">
+                      <span class="button__fill"></span>
+                      <span class="js-magnet-btn-text">Read more</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <div class="a-line" aria-hidden="true"></div>
+          </section>
+          <!-- Section services end -->
+
+          <!-- Section team start -->
+          <section class="container mt-[160px] lg:mt-[350px]">
+            <h2 class="uppercase text-xl md:text-3xl leading-tight">
+              EXECUTIVE <br />
+              TEAM
+            </h2>
+
+            <div class="grid grid-cols-2 gap-6 mt-10 md:mt-24">
+              <p class="uppercase text-sm">since 2011</p>
+              <p class="uppercase text-sm">
+                Chief Executive <br />
+                Officers
+              </p>
+            </div>
+
+            <div class="mt-4 md:mt-28 space-y-28">
+              <div class="grid md:grid-cols-8 gap-6 team-wrapper items-end">
+                <div class="md:col-start-1 md:col-end-4 lg:col-start-2">
+                  <div class="team-img">
+                    <img src="./images/content/team-1.png" alt="" />
+                  </div>
+                </div>
+                <div class="md:col-start-5 md:col-end-9">
+                  <h2
+                    class="text-[40px] leading-none lg:text-[60px] xl:text-[80px] 2xl:text-[90px] uppercase"
+                  >
+                    Ron <br />
+                    Ross
+                  </h2>
+                  <p class="max-w-md mt-4 md:mt-10 lg:ml-1.5">
+                    Emil Khodorkovsky immigrated to the United States at the age
+                    of 10 to Harrisburg, PA. He attended Penn State University
+                    and then Cal State Northridge for Finance and Real Estate.
+                    In 2001 he began his career in an entry level position at a
+                    mortgage company. He quickly advanced.
+                  </p>
+                </div>
+              </div>
+              <div class="grid md:grid-cols-8 gap-6 team-wrapper items-end">
+                <div class="md:col-start-1 md:col-end-4 lg:col-start-2">
+                  <div class="team-img">
+                    <img src="./images/content/team-2.png" alt="" />
+                  </div>
+                </div>
+                <div class="md:col-start-5 md:col-end-9">
+                  <h2
+                    class="text-[40px] leading-none lg:text-[60px] xl:text-[80px] 2xl:text-[90px] uppercase"
+                  >
+                    Emil <br />
+                    Khodorkovsky
+                  </h2>
+                  <p class="max-w-md mt-4 md:mt-10 lg:ml-1.5">
+                    Emil Khodorkovsky immigrated to the United States at the age
+                    of 10 to Harrisburg, PA. He attended Penn State University
+                    and then Cal State Northridge for Finance and Real Estate.
+                    In 2001 he began his career in an entry level position at a
+                    mortgage company. He quickly advanced.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="grid justify-center lg:grid-cols-8 gap-6 mt-[92px] md:mt-[60px]"
+              >
+                <div class="lg:col-start-5 lg:col-span-4">
+                  <a
+                    href="./team.html"
+                    class="button-round relative js-magnet-btn"
+                  >
+                    <span class="js-magnet-btn-text">Our team</span>
+                    <svg class="svg-indicator">
+                      <circle class="svg-indicator-track" />
+                      <circle class="svg-indicator-indication" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Section team end -->
+
+          <!-- Section news start -->
+          <section class="container mt-[234px] lg:mt-[300px]">
+            <h2 class="uppercase text-xl md:text-3xl leading-tight">
+              Our news
+            </h2>
+            <div class="mt-8 md:mt-10">
+              <div class="grid md:grid-cols-2 md:gap-x-6">
+                <article class="group relative -mt-px">
+                  <div
+                    class="absolute top-0 left-0 w-full h-0 bg-[#24138B] group-hover:h-full transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)]"
+                  ></div>
+                  <div class="a-line" aria-hidden="true"></div>
+                  <div class="pt-16 pb-20 lg:pb-[144px] relative px-6 lg:px-28">
+                    <p class="text-zinc-400 text-sm">Mar 14, 2022</p>
+                    <h4
+                      class="text-2xl leading-tight lg:text-4xl mt-5 transition-all group-hover:text-white group-hover:translate-y-[32px] ease-[cubic-bezier(.77,.14,.11,.88)] duration-500"
+                    >
+                      Construction Loans and Opportunity Zones: How to Get the
+                      Highest Leverage for OZ Projects
+                    </h4>
+                    <a href="./news-details.html" class="absolute inset-0"></a>
+                  </div>
+                  <div class="a-line" aria-hidden="true"></div>
+                </article>
+
+                <article class="group relative -mt-px">
+                  <div
+                    class="absolute top-0 left-0 w-full h-0 bg-[#24138B] group-hover:h-full transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)]"
+                  ></div>
+                  <div class="a-line" aria-hidden="true"></div>
+                  <div class="pt-16 pb-20 lg:pb-[144px] relative px-6 lg:px-28">
+                    <p class="text-zinc-400 text-sm">Mar 14, 2022</p>
+                    <h4
+                      class="text-2xl leading-tight lg:text-4xl mt-5 transition-all group-hover:text-white group-hover:translate-y-[32px] ease-[cubic-bezier(.77,.14,.11,.88)] duration-500"
+                    >
+                      Construction Loans and Opportunity Zones: How to Get the
+                      Highest Leverage for OZ Projects
+                    </h4>
+                    <a href="./news-details.html" class="absolute inset-0"></a>
+                  </div>
+                  <div class="a-line" aria-hidden="true"></div>
+                </article>
+
+                <article class="group relative -mt-px">
+                  <div
+                    class="absolute top-0 left-0 w-full h-0 bg-[#24138B] group-hover:h-full transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)]"
+                  ></div>
+                  <div class="a-line" aria-hidden="true"></div>
+                  <div class="pt-16 pb-20 lg:pb-[144px] relative px-6 lg:px-28">
+                    <p class="text-zinc-400 text-sm">Mar 14, 2022</p>
+                    <h4
+                      class="text-2xl leading-tight lg:text-4xl mt-5 transition-all group-hover:text-white group-hover:translate-y-[32px] ease-[cubic-bezier(.77,.14,.11,.88)] duration-500"
+                    >
+                      Construction Loans and Opportunity Zones: How to Get the
+                      Highest Leverage for OZ Projects
+                    </h4>
+                    <a href="./news-details.html" class="absolute inset-0"></a>
+                  </div>
+                  <div class="a-line" aria-hidden="true"></div>
+                </article>
+
+                <article class="group relative -mt-px">
+                  <div
+                    class="absolute top-0 left-0 w-full h-0 bg-[#24138B] group-hover:h-full transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)]"
+                  ></div>
+                  <div class="a-line" aria-hidden="true"></div>
+                  <div class="pt-16 pb-20 lg:pb-[144px] relative px-6 lg:px-28">
+                    <p class="text-zinc-400 text-sm">Mar 14, 2022</p>
+                    <h4
+                      class="text-2xl leading-tight lg:text-4xl mt-5 transition-all group-hover:text-white group-hover:translate-y-[32px] ease-[cubic-bezier(.77,.14,.11,.88)] duration-500"
+                    >
+                      Construction Loans and Opportunity Zones: How to Get the
+                      Highest Leverage for OZ Projects
+                    </h4>
+                    <a href="./news-details.html" class="absolute inset-0"></a>
+                  </div>
+                  <div class="a-line" aria-hidden="true"></div>
+                </article>
+              </div>
+            </div>
+
+            <div class="flex justify-center md:justify-end mt-10 md:mt-12">
+              <a href="./news.html" class="button js-magnet-btn">
+                <span class="button__fill"></span>
+                <span class="js-magnet-btn-text">All News</span>
+              </a>
+            </div>
+          </section>
+          <!-- Section news end -->
+
+          <!-- Footer start -->
+          <footer class="footer mt-56 md:mt-80">
+            <div class="container">
+              <div class="pb-5 border-b border-gray-200">
+                <a href="./contact.html" class="footer__heading">
+                  Get in touch
+
+                  <svg
+                    class="footer__icon"
+                    width="64"
+                    height="64"
+                    viewBox="0 0 64 64"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask
+                      id="a"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y=".5"
+                      width="64"
+                      height="64"
+                      fill="#000"
+                    >
+                      <path fill="#fff" d="M0 .5h64v64H0z" />
+                      <path d="m5 59.5 56-56Zm56-56H11.456Zm0 0v49.544Z" />
+                    </mask>
+                    <path
+                      d="M2.879 57.379.757 59.5 5 63.743l2.121-2.122L2.88 57.38ZM61 3.5h3v-3h-3v3ZM11.456.5h-3v6h3v-6ZM58 53.044v3h6v-3h-6ZM7.121 61.621l37.674-37.674L58 10.743l3.774-3.774 1.003-1.002a883.796 883.796 0 0 0 .323-.324l.017-.016.004-.004.001-.001L61 3.5l-2.122-2.121v.001l-.005.004-.016.017-.066.065-.258.258-1.002 1.003L53.757 6.5 40.553 19.705 2.879 57.379 7.12 61.62ZM61 .5H11.456v6H61v-6Zm-3 3v49.544h6V3.5h-6Z"
+                      fill="currentColor"
+                      mask="url(#a)"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <div class="mt-16 lg:mt-56">
+                <div class="grid lg:grid-cols-8 gap-16 lg:gap-8 items-end">
+                  <div class="lg:col-span-3 xl:col-span-2">
+                    <p class="text-sm leading-none text-zinc-500">
+                      BRANDON, MS
+                    </p>
+                    <ul class="mt-3">
+                      <li class="footer__link">(888) 936-7249</li>
+                      <li class="footer__link">Info@Forbix.com</li>
+                    </ul>
+                  </div>
+                  <div class="lg:col-span-3 xl:col-span-2">
+                    <p class="text-sm leading-none text-zinc-500">
+                      LOS ANGELES, CA
+                    </p>
+                    <ul class="mt-3">
+                      <li class="footer__link">(601) 965-9677</li>
+                      <li class="footer__link">Info@Forbix.com</li>
+                    </ul>
+                  </div>
+                  <div class="lg:col-span-2 xl:col-span-4">
+                    <div
+                      class="flex justify-between gap-4 md:flex-col lg:items-end"
+                    >
+                      <a class="footer__social-link" target="_blank" href="#">
+                        INSTAGRAM
+                      </a>
+                      <a class="footer__social-link" target="_blank" href="#">
+                        FACEBOOK
+                      </a>
+                      <a class="footer__social-link" target="_blank" href="#">
+                        TWITTER
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- Footer end -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+.marquee__part {
+  flex-shrink: 0;
+  font-smooth: always;
+  font-size: 112px;
+  line-height: 96.34%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  @include media-up(lg) {
+    font-size: 280px;
+  }
+}
+
+.marquee {
+  position: relative;
+  overflow: hidden;
+}
+
+.marquee__inner {
+  -webkit-font-smoothing: antialiased;
+  width: fit-content;
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  gap: 32px;
+}

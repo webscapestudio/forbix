@@ -1,0 +1,138 @@
+.accordion-wrapper:hover {
+  .accordion__heading,
+  .accordion__num {
+    color: #d4d4d4;
+  }
+}
+
+.accordion-wrapper > * + * {
+  padding-top: 45px;
+
+  @include media-up(md) {
+    padding-top: 67px;
+  }
+}
+
+.accordion.opened:not(.active) {
+  svg {
+    opacity: 1;
+    transform: translateX(0) rotate(-90deg);
+  }
+}
+
+.accordion {
+  &__num {
+    color: #303030;
+  }
+  &:hover &__heading {
+    color: #303030;
+  }
+  &:hover &__num {
+    color: #303030;
+  }
+  &:hover &__header {
+    color: #303030;
+
+    svg {
+      opacity: 1;
+      transform: translateX(0) rotate(-90deg);
+    }
+  }
+  &.active &__heading {
+    @apply text-[#24138B];
+  }
+
+  &.active &__num {
+    @apply text-[#303030];
+  }
+
+  &.active &__header svg {
+    @apply text-[#24138B] opacity-100;
+    transform: translateX(0) rotate(0deg);
+  }
+
+  &__header {
+    @apply border-b border-gray-200 cursor-pointer relative text-neutral-300 flex items-center justify-between pl-5 md:pl-0;
+    svg {
+      opacity: 0;
+      transform: translateX(-32px) rotate(-90deg);
+      transition: opacity 0.2s ease, transform 0.2s ease-out;
+    }
+  }
+
+  &__num {
+    @apply absolute md:-left-8 left-0 top-1.5 transition-colors duration-200 text-xs md:text-sm;
+  }
+
+  &__heading {
+    font-size: 3rem;
+    @apply uppercase leading-none transition-colors duration-200 text-[#303030];
+
+    @screen md {
+      font-size: 4.25rem;
+    }
+  }
+
+  &__content {
+    @apply max-w-2xl h-0 overflow-hidden;
+  }
+}
+
+.accordion-primary-wrapper:hover {
+  @apply text-[#A1A1AA];
+
+  .accordion-primary__icon {
+    color: #a1a1aa;
+  }
+}
+
+.accordion-primary {
+  @apply pr-14 md:pr-0 py-5 border-t border-gray-200 grid md:grid-cols-8 gap-6 relative cursor-pointer;
+
+  .accordion-primary__content {
+    p {
+      color: #303030;
+    }
+  }
+
+  &:hover {
+    .accordion-primary__icon {
+      color: #303030;
+    }
+  }
+
+  &.active {
+    .accordion-primary__icon {
+      color: #303030;
+    }
+  }
+
+  &.active &__heading {
+    color: #24138b !important;
+  }
+
+  &__header {
+    @apply md:col-start-1 md:col-end-4;
+  }
+
+  &:hover &__heading {
+    @apply text-dark;
+  }
+
+  &__heading {
+    @apply text-xl md:text-2xl text-inherit leading-tight transition-colors;
+    letter-spacing: -0.015em;
+  }
+
+  &__content {
+    @apply md:col-start-5 md:col-end-8 h-0 overflow-hidden will-change-auto text-sm md:text-base leading-tight;
+  }
+
+  &__icon {
+    @apply absolute right-4 top-6  w-7 h-7 will-change-transform;
+  }
+
+  // &.active &__icon {
+  //   transform: rotate(45deg);
+  // }
+}

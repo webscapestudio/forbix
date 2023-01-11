@@ -1,0 +1,35 @@
+.process-swiper {
+  @apply cursor-grab active:cursor-grabbing;
+  overflow: initial !important;
+
+  &__num {
+    @apply w-[66px] h-[66px] border border-[#303030] rounded-full flex items-center justify-center  transition-colors duration-200;
+  }
+
+  &__heading {
+    @apply text-dark uppercase text-sm  md:text-base leading-none  transition-colors;
+  }
+
+  &__text {
+    @apply transition-colors text-sm md:text-base leading-tight;
+  }
+
+  .swiper-slide:hover &__num,
+  .swiper-slide:hover &__heading,
+  .swiper-slide:hover &__text {
+    @apply text-white;
+  }
+
+  .swiper-slide {
+    @apply pt-20 px-11 pb-[77px] md:pr-[126px] md:pb-[90px] md:pl-[107px] border-t border-b border-l border-black border-opacity-25 relative;
+    height: initial;
+
+    &:hover .process-swiper__num {
+      @apply border-white;
+    }
+
+    &:last-child {
+      @apply border-r;
+    }
+  }
+}

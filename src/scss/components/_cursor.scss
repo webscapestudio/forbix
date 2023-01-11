@@ -1,0 +1,168 @@
+$mf-color-base: #000 !default;
+$mf-color-text: #333 !default;
+
+.mf-cursor {
+  $root: &;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 250;
+
+  direction: ltr;
+  contain: layout style size;
+  pointer-events: none;
+
+  transition: opacity 0.3s, color 0.4s;
+  color: #fff;
+
+  @media (max-width: 1024px) {
+    display: none !important;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -24px;
+    left: -24px;
+    display: block;
+    width: 48px;
+    height: 48px;
+    transform: scale(0.6);
+
+    background: currentColor;
+    // border: 1px solid rgba(#000, 0.08);
+    border-radius: 50%;
+
+    transition: transform 0.25s ease-in-out, opacity 0.1s;
+  }
+
+  &.-inverse {
+    color: invert($mf-color-base);
+  }
+  &.-dark {
+    color: var(--color-primary) !important;
+  }
+
+  &.-exclusion {
+    @supports (mix-blend-mode: exclusion) {
+      mix-blend-mode: exclusion;
+
+      &:before {
+        background: invert($mf-color-base);
+      }
+    }
+  }
+
+  &.-pointer {
+    &:before {
+      border: none;
+      transform: scale(0.25);
+    }
+  }
+
+  &.-text {
+    &:before {
+      opacity: 1;
+      transform: scale(2);
+    }
+
+    &.-active:before {
+      transform: scale(1.6);
+      transition-duration: 0.2s;
+    }
+  }
+
+  &.-icon {
+    &:before {
+      transform: scale(1.5);
+    }
+
+    &.-active:before {
+      transform: scale(1.4);
+    }
+  }
+
+  &.-hidden {
+    &:before {
+      transform: scale(0);
+    }
+  }
+
+  &-text {
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0) rotate(10deg);
+
+    opacity: 0;
+    color: $mf-color-text;
+
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    transition: opacity 0.4s, transform 0.3s;
+
+    #{$root}.-text &,
+    #{$root}.-icon & {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  &-media {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    margin: (-400px * 0.5) 0 0 (-400px * 0.5);
+
+    img,
+    video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+
+      @supports (object-fit: cover) {
+        position: static;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: translateZ(0);
+      }
+    }
+
+    &-box {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      transform: scale(0) translateZ(0);
+      padding: 1px;
+
+      opacity: 0;
+      border-radius: 50%;
+
+      transition: transform 0.35s, opacity 0.2s 0.2s;
+
+      #{$root}.-media & {
+        opacity: 1;
+        transform: scale(0.696);
+        transition-duration: 0.4s, 0.4s;
+        transition-delay: 0s, 0s;
+      }
+    }
+  }
+}
+
+@include media-down(lg) {
+  .mf-cursor {
+    display: none !important;
+  }
+}

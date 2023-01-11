@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forbix | Investment company</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/content/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/content/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/content/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/content/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./images/content/favicon/safari-pinned-tab.svg"
+      color="#000000"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <div class="scroller">
+      <div data-barba="wrapper">
+        <!-- Preloader start -->
+        <div class="preloader">
+          <div class="preloader__content">
+            <p>Loading</p>
+            <p><span id="preloader-percent">0</span> %</p>
+          </div>
+        </div>
+        <!-- Preloader end -->
+
+        <!-- Page transition -->
+        <div class="page-transition">
+          <img src="./images/content/forbix-logo-light.svg" alt="" />
+        </div>
+        <!-- Page transition end -->
+
+        <!-- Navbar start -->
+        <div class="container relative">
+          <button class="navbar-burger">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <div class="navbar">
+          <div class="container">
+            <a class="navbar__logo" href="./index.html">
+              <img src="./images/content/logo-light.svg" alt="" />
+            </a>
+          </div>
+
+          <div class="navbar__list">
+            <div class="navbar__list-item">
+              <div class="container" data-cursor-arrow>
+                <a href="./commercial.html" class="navbar__list-link">
+                  <span class="navbar__list-num">01/</span>
+                  <span class="navbar__list-text">Commercial loans</span>
+                  <!-- <img
+                  class="navbar__list-img"
+                  src="./images/content/nav-img.png"
+                  alt=""
+                />
+               -->
+                  <video
+                    class="navbar__list-img"
+                    muted
+                    autoplay
+                    src="./videos/home.mp4"
+                  ></video>
+                </a>
+              </div>
+            </div>
+            <div class="navbar__list-item">
+              <div class="container" data-cursor-arrow>
+                <a href="./portfolio.html" class="navbar__list-link">
+                  <span class="navbar__list-num">02/</span>
+                  <span class="navbar__list-text"> Real estate investment</span>
+                  <!-- <img class="navbar__list-img" src="./images/content/nav-img.png" alt="" /> -->
+                  <video
+                    class="navbar__list-img"
+                    muted
+                    autoplay
+                    src="./videos/home.mp4"
+                  ></video>
+                </a>
+              </div>
+            </div>
+            <div class="navbar__list-item">
+              <div class="container" data-cursor-arrow>
+                <a href="./residential.html" class="navbar__list-link">
+                  <span class="navbar__list-num">03/</span>
+                  <span class="navbar__list-text">Residential loans</span>
+                  <!-- <img class="navbar__list-img" src="./images/content/nav-img.png" alt="" /> -->
+                  <video
+                    class="navbar__list-img"
+                    muted
+                    autoplay
+                    src="./videos/home.mp4"
+                  ></video>
+                </a>
+              </div>
+            </div>
+            <div class="navbar__list-item">
+              <div class="container" data-cursor-arrow>
+                <a href="about.html" class="navbar__list-link">
+                  <span class="navbar__list-num">04/</span>
+                  <span class="navbar__list-text">About us</span>
+                  <!-- <img class="navbar__list-img" src="./images/content/nav-img.png" alt="" /> -->
+                  <video
+                    class="navbar__list-img"
+                    muted
+                    autoplay
+                    src="./videos/home.mp4"
+                  ></video>
+                </a>
+              </div>
+            </div>
+            <div class="navbar__list-item">
+              <div class="container" data-cursor-arrow>
+                <a href="./contact.html" class="navbar__list-link">
+                  <span class="navbar__list-num">05/</span>
+                  <span class="navbar__list-text">Contacts</span>
+                  <!-- <img class="navbar__list-img" src="./images/content/nav-img.png" alt="" /> -->
+                  <video
+                    class="navbar__list-img"
+                    muted
+                    autoplay
+                    src="./videos/home.mp4"
+                  ></video>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="navbar__footer">
+              <a href="#">Instagram</a>
+              <a href="#">Facebook</a>
+              <a href="#">Twitter</a>
+            </div>
+          </div>
+        </div>
+        <!-- Navbar start -->
+
+        <div data-barba="container" data-barba-namespace="about">
+          <div class="container" id="relative-container">
+            <a href="./index.html" class="logo">
+              <svg
+                width="98"
+                viewBox="0 0 97 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="logo-path"
+                  d="M0 22.7905H4.0678V13.794H10.8374V9.84495H4.0678V4.76752H11.1639V0.818501H0L0 22.7905Z"
+                  fill="#292B32"
+                />
+                <path
+                  class="logo-path"
+                  d="M24.3157 19.3762C20.0698 19.3762 16.8334 15.9912 16.8334 11.8343C16.8334 7.73678 20.0401 4.38165 24.3454 4.38165C28.6508 4.38165 31.8574 7.73678 31.8574 11.8343C31.8574 15.9318 28.6805 19.3762 24.3157 19.3762ZM24.3454 0.432632C17.7835 0.432632 12.7656 5.56925 12.7656 11.9234C12.7656 18.2777 17.8132 23.3252 24.3454 23.3252C30.8777 23.3252 35.9253 18.2777 35.9253 11.9234C35.9253 5.56925 30.9074 0.432632 24.3454 0.432632"
+                  fill="#292B32"
+                />
+                <path
+                  class="logo-path"
+                  d="M50.0536 7.7965C50.0536 5.68836 49.1925 0.81899 41.7992 0.81899H35.4453V4.75958H39.5463V4.76782H41.918C42.868 4.76782 45.9858 4.8571 45.9858 8.03405C45.9858 11.2112 42.868 11.3001 41.918 11.3001H39.5463V14.6851H39.5723L45.2731 22.791H50.2912L44.1152 14.6851C47.7079 14.3288 50.0536 11.3001 50.0536 7.7965Z"
+                  fill="#292B32"
+                />
+                <path
+                  class="logo-path"
+                  d="M59.5618 18.8417H56.9194V13.2298H59.5618C62.7388 13.2298 63.0357 15.249 63.0357 16.0803C63.0357 18.812 60.0367 18.8417 59.5618 18.8417ZM56.9194 4.76752H58.8196C59.7101 4.76752 61.6996 4.88649 61.6996 7.02433C61.6996 7.58834 61.4918 9.28094 58.8196 9.28094H56.9194V4.76752ZM63.3624 10.795C63.9563 10.4683 65.7674 9.34033 65.7674 6.6086C65.7674 0.848387 59.5024 0.818694 58.1365 0.818694H52.8516V22.7905H58.3443C65.3812 22.7905 67.1035 19.2869 67.1035 16.11C67.1035 13.6455 65.7378 11.5967 63.3624 10.795"
+                  fill="#292B32"
+                />
+                <path
+                  class="logo-path"
+                  d="M69.6172 22.7905H73.685V0.900106H69.6172V22.7905Z"
+                  fill="#292B32"
+                />
+
+                <path
+                  class="logo-path"
+                  d="M96.0055 0.903645H91.3005L86.1248 8.46125L80.9786 0.903645H76.2734L83.7724 11.784L76.2734 22.6646H80.9786L86.1248 15.1364L91.3005 22.6646H96.0055L88.4774 11.784L96.0055 0.903645Z"
+                  fill="#292B32"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Hero start -->
+          <header
+            class="container pt-[114px] md:pt-[106px] pb-[109px] md:pb-[277px]"
+          >
+            <p class="hidden md:inline-block text-sm header-animation">
+              <a href="index.html" class="text-[#A1A1A1]">Home /</a> Company
+            </p>
+
+            <h1
+              class="heading-primary !block header-animation text-center md:mt-[89px]"
+            >
+              COMPANY
+            </h1>
+
+            <div class="mt-[22px] lg:mt-[70px] header-animation">
+              <div class="grid lg:grid-cols-8 gap-6">
+                <div class="lg:col-start-5 lg:col-end-9">
+                  <p
+                    class="max-w-[218px] mx-auto lg:mx-0 lg:max-w-[341px] text-[10px] leading-tight lg:text-xl tracking-tight"
+                  >
+                    Our inspired solutions have helped shape modern acoustic
+                    design. Alluring spaces, internationally recognised for
+                    their architectural.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </header>
+          <!-- Hero end -->
+
+          <div class="container">
+            <div class="a-line"></div>
+
+            <div class="mt-[54px] lg:mt-8 header-animation">
+              <div class="grid md:grid-cols-8 gap-[28px] md:gap-6">
+                <div class="col-span-4">
+                  <h2 class="text-[34px] md:text-[25px] leading-none">
+                    FORBIX IS A <br class="md:hidden" />
+                    DIRECT <br class="hidden md:inline" />
+                    LENDER <br class="md:hidden" />
+                    & ADVISORY <br class="hidden md:inline" />
+                    FIRM
+                  </h2>
+                </div>
+
+                <div class="col-span-4">
+                  <p class="max-w-[629px] tracking-tight">
+                    We currently have over 500 units under development, with an
+                    aggregate value of $250 million across various states. Our
+                    real estate investment strategy is centered on one premise;
+                    value added deals. This objective is achieved by strategic
+                    partnerships with experienced developers and operators
+                    across the country. <br /><br />
+                    Through our vast experience in real estate investments and
+                    our in-depth knowledge as a direct lender, we offer our
+                    clients a different perspective. We assist our clients in
+                    maximizing the returns in their existing real estate
+                    portfolios. Our team has collectively been involved in over
+                    $3 billion of debt funding. We provide permanent, bridge,
+                    construction, mezzanine and private debt financing, offering
+                    a wide array of financing products such as Agency, CMBS, and
+                    Portfolio loans. We offer long term 35 and 40-year fixed
+                    loans for existing and construction of multifamily
+                    properties. These two long term fixed rate products act as a
+                    hedge to the property’s valuation in a rising interest rate
+                    environment.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Home video start -->
+            <div class="mt-[52px] lg:mt-[98px]">
+              <div class="header-animation">
+                <div class="h-parallaxremove img__wrapper">
+                  <!-- <video autoplay loop muted>
+                    <source src="./videos/home.mp4" type="video/mp4" />
+                    <source src="./videos/home.webm" type="video/webm" />
+                    Your browser doesn't support HTML5 video tag.
+                  </video> -->
+
+                  <img
+                    class="--parallaxed-img"
+                    src="./images/content/about.jpg"
+                    alt="asd"
+                    srcset=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Home video end -->
+
+            <div class="grid md:grid-cols-8 mt-[54px] md:mt-[60px]">
+              <div class="md:col-start-5 md:col-end-9">
+                <p class="max-w-[629px] tracking-tight">
+                  Forbix is a full service real estate advisory firm with
+                  offices in Calabasas, California and Brandon, Mississippi.
+                  What makes Forbix unique is our ability to advise clients from
+                  the standpoint of both a lender and an investor. This
+                  multi-faceted view approach has proven to be beneficial and
+                  invaluable for our clients and sets us apart from our peers.
+                  We have extensive knowledge of commercial and residential real
+                  estate financing and real estate investments in properties and
+                  debt instruments.
+                  <br /><br />
+                  At Forbix, we understand that every person is different. We
+                  listen, evaluate and educate our clients about the product
+                  that would complement their scenario. By offering alternative
+                  ways to finance properties with streamline documentation, more
+                  people qualify for loans with Forbix Capital. We offer leading
+                  edge products with exceptional rates and customer service.
+                  Forbix was founded in 2011 by a group of seasoned real estate
+                  financiers and investors. Advising our clients through the
+                  real estate cycles and putting our client’s needs above all
+                  else has led to our continued success. In addition to being a
+                  nationwide lender, Forbix is also a real estate investor with
+                  ownership of over 1,000 apartment units, land and commercial
+                  projects. We have acquired and repositioned distressed
+                  properties and non-performing loans.
+                </p>
+              </div>
+            </div>
+
+            <div class="a-line !hidden md:!block md:mt-[179px]"></div>
+          </div>
+
+          <section class="container mt-[150px] lg:mt-[360px]">
+            <div class="grid md:grid-cols-8 gap-6">
+              <div class="col-span-4">
+                <h2 class="text-[35px] leading-tight">
+                  Forbix is a full service real estate advisory firm with
+                  offices in Calabasas, California and Brandon, Mississippi.
+                </h2>
+              </div>
+            </div>
+
+            <div class="mt-[111px] md:mt-[209px]">
+              <div class="grid md:grid-cols-8 gap-20 md:gap-6 items-center">
+                <div class="md:col-span-4">
+                  <div class="space-y-20 md:space-y-[100px] xl:space-y-[183px]">
+                    <div class="space-y-[28px] md:space-y-[62px]">
+                      <h4 class="lg:text-[25px]">
+                        OUR <br class="hidden md:inline" />
+                        VISION
+                      </h4>
+                      <p class="max-w-[398px]">
+                        Our vision is to become a long term real estate partner
+                        to our clients. Your goals with our guidance, as one
+                        vision. Whether you are a first-time home buyer or a
+                        seasoned developer, our objective is to be able to
+                        evolve with your real estate needs, throughout your real
+                        estate evolution. We adapt and resolve the challenges
+                        that may arise, by offering access to the full capital
+                        stack. Our advisors have personal experience in lending,
+                        investing and developing and can offer real solutions to
+                        your objectives.
+                      </p>
+                    </div>
+
+                    <div class="space-y-[28px] md:space-y-[62px]">
+                      <h4 class="lg:text-[25px]">
+                        OUR <br class="hidden md:inline" />
+                        MISSION
+                      </h4>
+                      <p class="max-w-[398px]">
+                        It is our mission to properly educate and advise all of
+                        our clients to the appropriate loan and investment
+                        products to achieve the clients short term and long term
+                        goals. The first step in the process is for us to listen
+                        to what you want to achieve and offer solutions to get
+                        you there. Thinking outside the box is a 2D obsolete
+                        advisory cliché. Welcome to our CUBE, a 4D experience
+                        into your real estate future, encompassing residential,
+                        commercial, construction and development services,
+                        tailored to you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="md:col-span-4">
+                  <div class="img__wrapper h-[800px]">
+                    <img
+                      class="--parallaxed-img"
+                      src="images/content/about-par.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="a-line mt-[112px] md:mt-[203px]"></div>
+          </section>
+
+          <section class="container mt-[74px] md:mt-[182px]">
+            <div class="grid md:grid-cols-8 gap-[58px] md:gap-6">
+              <div class="col-span-4">
+                <h2 class="text-[35px] leading-tight max-w-[629px]">
+                  Forbix is a full service real estate advisory firm with
+                  offices in Calabasas, California and Brandon, Mississippi.
+                </h2>
+              </div>
+
+              <div class="col-span-4">
+                <div class="max-w-[629px] space-y-[60px]">
+                  <p>
+                    Forbix is a full service real estate advisory firm with
+                    offices in Calabasas, California and Brandon, Mississippi.
+                    What makes Forbix unique is our ability to advise clients
+                    from the standpoint of both a lender and an investor. This
+                    multi-faceted view approach has proven to be beneficial and
+                    invaluable for our clients and sets us apart from our peers.
+                    We have extensive knowledge of commercial and residential
+                    real estate financing and real estate investments in
+                    properties and debt instruments.
+                  </p>
+                  <p>
+                    Forbix is a full service real estate advisory firm with
+                    offices in Calabasas, California and Brandon, Mississippi.
+                    What makes Forbix unique is our ability to advise clients
+                    from the standpoint of both a lender and an investor. This
+                    multi-faceted view approach has proven to be beneficial and
+                    invaluable for our clients and sets us apart from our peers.
+                    We have extensive knowledge of commercial and residential
+                    real estate financing and real estate investments in
+                    properties and debt instruments.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="a-line mt-[76px] md:mt-[176px]"></div>
+          </section>
+
+          <section class="container mt-[54px] md:mt-[356px]">
+            <h2 class="text-xl leading-none md:text-[30px]">
+              <span class="hidden md:block">FORBIX</span>
+              TEAM
+            </h2>
+
+            <!-- Slider main container -->
+            <div
+              class="swiper team-swiper mt-5 md:mt-12"
+              data-cursor-text="drag"
+            >
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <figure>
+                    <img src="./images/content/team/team-1.jpg" alt="" />
+                    <figcaption class="mt-5 md:mt-6">
+                      <h4 class="text-xl text-dark leading-tight">
+                        TODD ANDREWS
+                      </h4>
+                      <p class="text-sm uppercase leading-tight mt-1">
+                        Manager
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure>
+                    <img src="./images/content/team/team-2.jpg" alt="" />
+                    <figcaption class="mt-5 md:mt-6">
+                      <h4 class="text-xl text-dark leading-tight">
+                        RYAN BUTLER
+                      </h4>
+                      <p class="text-sm uppercase leading-tight mt-1">
+                        Manager
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure>
+                    <img src="./images/content/team/team-3.jpg" alt="" />
+                    <figcaption class="mt-5 md:mt-6">
+                      <h4 class="text-xl text-dark leading-tight">
+                        MONA ELHALWAGY J.D.
+                      </h4>
+                      <p class="text-sm uppercase leading-tight mt-1">
+                        Manager
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure>
+                    <img src="./images/content/team/team-1.jpg" alt="" />
+                    <figcaption class="mt-5 md:mt-6">
+                      <h4 class="text-xl text-dark leading-tight">
+                        TODD ANDREWS
+                      </h4>
+                      <p class="text-sm uppercase leading-tight mt-1">
+                        Manager
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure>
+                    <img src="./images/content/team/team-2.jpg" alt="" />
+                    <figcaption class="mt-5 md:mt-6">
+                      <h4 class="text-xl text-dark leading-tight">
+                        RYAN BUTLER
+                      </h4>
+                      <p class="text-sm uppercase leading-tight mt-1">
+                        Manager
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure>
+                    <img src="./images/content/team/team-3.jpg" alt="" />
+                    <figcaption class="mt-5 md:mt-6">
+                      <h4 class="text-xl text-dark leading-tight">
+                        MONA ELHALWAGY J.D.
+                      </h4>
+                      <p class="text-sm uppercase leading-tight mt-1">
+                        Manager
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center gap-5 mt-10 md:hidden">
+              <button class="text-xl team-swiper-prev">PREV</button>
+              <button class="text-xl team-swiper-next">NEXT</button>
+            </div>
+
+            <div class="mt-16 text-center md:text-right">
+              <a href="#" class="button-round relative js-magnet-btn">
+                <span class="js-magnet-btn-text">All team</span>
+                <svg class="svg-indicator">
+                  <circle class="svg-indicator-track" />
+                  <circle class="svg-indicator-indication" />
+                </svg>
+              </a>
+            </div>
+          </section>
+
+          <div class="overflow-hidden">
+            <section class="container mt-[134px] md:mt-[273px]">
+              <div class="grid gap-6 grid-cols-2">
+                <div>
+                  <h2 class="text-xl leading-none md:text-[30px]">
+                    OUR <br />
+                    HISTORY
+                  </h2>
+                </div>
+                <div>
+                  <p class="text-[#303030] md:text-[#A1A1AA] max-w-[197px]">
+                    We understand how environments shape human creativity.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <div class="mt-7 md:mt-20">
+              <!-- Slider main container -->
+              <div class="swiper history-swiper" data-cursor-text="drag">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img
+                      src="./images/content/history-img.jpg"
+                      alt=""
+                      class="history-swiper__img"
+                    />
+                    <h4 class="history-swiper__heading">2012</h4>
+                    <p class="history-swiper__text">
+                      Forbix was founded in 2011 by group of seasoned real
+                      estate financiers and investors. Forbix was founded in
+                      2011 by group of seasoned real estate financiers.
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./images/content/history-img.jpg"
+                      alt=""
+                      class="history-swiper__img"
+                    />
+                    <h4 class="history-swiper__heading">2013</h4>
+                    <p class="history-swiper__text">
+                      Forbix was founded in 2011 by group of seasoned real
+                      estate financiers and investors. Forbix was founded in
+                      2011 by group of seasoned real estate financiers.
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./images/content/history-img.jpg"
+                      alt=""
+                      class="history-swiper__img"
+                    />
+                    <h4 class="history-swiper__heading">2014</h4>
+                    <p class="history-swiper__text">
+                      Forbix was founded in 2011 by group of seasoned real
+                      estate financiers and investors. Forbix was founded in
+                      2011 by group of seasoned real estate financiers.
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./images/content/history-img.jpg"
+                      alt=""
+                      class="history-swiper__img"
+                    />
+                    <h4 class="history-swiper__heading">2015</h4>
+                    <p class="history-swiper__text">
+                      Forbix was founded in 2011 by group of seasoned real
+                      estate financiers and investors. Forbix was founded in
+                      2011 by group of seasoned real estate financiers.
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./images/content/history-img.jpg"
+                      alt=""
+                      class="history-swiper__img"
+                    />
+                    <h4 class="history-swiper__heading">2016</h4>
+                    <p class="history-swiper__text">
+                      Forbix was founded in 2011 by group of seasoned real
+                      estate financiers and investors. Forbix was founded in
+                      2011 by group of seasoned real estate financiers.
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./images/content/history-img.jpg"
+                      alt=""
+                      class="history-swiper__img"
+                    />
+                    <h4 class="history-swiper__heading">2017</h4>
+                    <p class="history-swiper__text">
+                      Forbix was founded in 2011 by group of seasoned real
+                      estate financiers and investors. Forbix was founded in
+                      2011 by group of seasoned real estate financiers.
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./images/content/history-img.jpg"
+                      alt=""
+                      class="history-swiper__img"
+                    />
+                    <h4 class="history-swiper__heading">2018</h4>
+                    <p class="history-swiper__text">
+                      Forbix was founded in 2011 by group of seasoned real
+                      estate financiers and investors. Forbix was founded in
+                      2011 by group of seasoned real estate financiers.
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./images/content/history-img.jpg"
+                      alt=""
+                      class="history-swiper__img"
+                    />
+                    <h4 class="history-swiper__heading">2019</h4>
+                    <p class="history-swiper__text">
+                      Forbix was founded in 2011 by group of seasoned real
+                      estate financiers and investors. Forbix was founded in
+                      2011 by group of seasoned real estate financiers.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="container mt-[170px] md:mt-[350px]">
+            <div class="grid md:grid-cols-2 gap-16 md:gap-6">
+              <div>
+                <h2
+                  class="text-[34px] md:text-[25px] leading-tight md:uppercase max-w-[364px]"
+                >
+                  Our business approach is as unique as our work environments
+                </h2>
+              </div>
+
+              <div>
+                <p class="max-w-[629px]">
+                  We currently have over 500 units under development, with an
+                  aggregate value of $250 million across various states. Our
+                  real estate investment strategy is centered on one premise;
+                  value added deals. This objective is achieved by strategic
+                  partnerships with experienced developers and operators across
+                  the country.
+
+                  <br /><br /><br />
+
+                  Through our vast experience in real estate investments and our
+                  in-depth knowledge as a direct lender, we offer our clients a
+                  different perspective. We assist our clients in maximizing the
+                  returns in their existing real estate portfolios. Our team has
+                  collectively been involved in over $3 billion of debt funding.
+                  We provide permanent, bridge, construction, mezzanine and
+                  private debt financing, offering a wide array of financing
+                  products such as Agency, CMBS, and Portfolio loans. We offer
+                  long term 35 and 40-year fixed loans for existing and
+                  construction of multifamily properties. These two long term
+                  fixed rate products act as a hedge to the property’s valuation
+                  in a rising interest rate environment.
+                </p>
+              </div>
+            </div>
+
+            <div class="a-line mt-16 md:mt-[142px]"></div>
+          </section>
+
+          <!-- Services section -->
+          <section class="container mt-[169px] md:mt-[403px]">
+            <div class="grid lg:grid-cols-2 gap-14 md:gap-8">
+              <div>
+                <h2
+                  class="text-xl md:text-3xl leading-tight text-dark uppercase"
+                >
+                  Services
+                </h2>
+              </div>
+              <div class="accordion-wrapper">
+                <div class="accordion" data-cursor-dark>
+                  <div class="accordion__header">
+                    <p class="accordion__num">01</p>
+                    <h4 class="accordion__heading">Commercial</h4>
+
+                    <!-- w-7 h-7 lg:w-10 lg:h-10" -->
+                    <svg class="w-7 h-7 lg:w-10 lg:h-10 text-[#303030]">
+                      <use
+                        xlink:href="./images/content/sprite.svg#icon-arrow"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="accordion__content">
+                    <p>
+                      The purpose of lorem ipsum is to create a natural looking
+                      block of text (sentence, paragraph, page, etc.) that
+                      doesn't distract from the layout. A practice not without
+                      controversy, laying out pages with meaningless filler text
+                      can be very useful when the focus is meant to be on
+                      design, not content. The purpose of lorem ipsum is to
+                      create a natural looking block of text (sentence,
+                      paragraph, page, etc.) that doesn't distract from the
+                      layout. A practice not without controversy, laying out
+                      pages with meaningless filler text can be very useful when
+                      the focus is meant to be on design, not content.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion" data-cursor-dark>
+                  <div class="accordion__header">
+                    <p class="accordion__num">02</p>
+                    <h4 class="accordion__heading">Residential</h4>
+                    <svg class="w-7 h-7 lg:w-10 lg:h-10">
+                      <use
+                        xlink:href="./images/content/sprite.svg#icon-arrow"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="accordion__content">
+                    <p>
+                      The purpose of lorem ipsum is to create a natural looking
+                      block of text (sentence, paragraph, page, etc.) that
+                      doesn't distract from the layout. A practice not without
+                      controversy, laying out pages with meaningless filler text
+                      can be very useful when the focus is meant to be on
+                      design, not content. The purpose of lorem ipsum is to
+                      create a natural looking block of text (sentence,
+                      paragraph, page, etc.) that doesn't distract from the
+                      layout. A practice not without controversy, laying out
+                      pages with meaningless filler text can be very useful when
+                      the focus is meant to be on design, not content.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion" data-cursor-dark>
+                  <div class="accordion__header">
+                    <p class="accordion__num">03</p>
+                    <h4 class="accordion__heading">Investment</h4>
+                    <svg class="w-7 h-7 lg:w-10 lg:h-10">
+                      <use
+                        xlink:href="./images/content/sprite.svg#icon-arrow"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="accordion__content">
+                    <p>
+                      The purpose of lorem ipsum is to create a natural looking
+                      block of text (sentence, paragraph, page, etc.) that
+                      doesn't distract from the layout. A practice not without
+                      controversy, laying out pages with meaningless filler text
+                      can be very useful when the focus is meant to be on
+                      design, not content. The purpose of lorem ipsum is to
+                      create a natural looking block of text (sentence,
+                      paragraph, page, etc.) that doesn't distract from the
+                      layout. A practice not without controversy, laying out
+                      pages with meaningless filler text can be very useful when
+                      the focus is meant to be on design, not content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Services section end -->
+
+          <!-- Section join -->
+          <section class="container mt-[213px] md:mt-[424px]">
+            <div class="max-w-[642px] mx-auto">
+              <div class="lg:col-start-3 lg:col-end-7 text-center">
+                <h2
+                  class="text-4xl lg:text-6xl leading-tight text-dark uppercase"
+                >
+                  join our team
+                </h2>
+                <p
+                  class="text-sm md:text-lg mt-5 md:mt-[38px] text-[#A1A1AA] leading-tight"
+                >
+                  Forbix is always looking for energetic, confident individuals
+                  with strong analytical skills. Once you submit your resume, a
+                  member of the Forbix team will be in touch to discuss your
+                  qualifications and opportunities within our company.
+                </p>
+
+                <div class="mt-8 lg:mt-12">
+                  <a
+                    href="#"
+                    class="button button--dark js-magnet-btn js-hero-animation"
+                  >
+                    <span class="button__fill"></span>
+                    <span class="js-magnet-btn-text">Join</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Section join end -->
+
+          <!-- Footer start -->
+          <footer class="footer mt-56 md:mt-80">
+            <div class="container">
+              <div class="pb-5 border-b border-gray-200">
+                <a href="./contact.html" class="footer__heading">
+                  Get in touch
+
+                  <svg
+                    class="footer__icon"
+                    width="64"
+                    height="64"
+                    viewBox="0 0 64 64"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask
+                      id="a"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y=".5"
+                      width="64"
+                      height="64"
+                      fill="#000"
+                    >
+                      <path fill="#fff" d="M0 .5h64v64H0z" />
+                      <path d="m5 59.5 56-56Zm56-56H11.456Zm0 0v49.544Z" />
+                    </mask>
+                    <path
+                      d="M2.879 57.379.757 59.5 5 63.743l2.121-2.122L2.88 57.38ZM61 3.5h3v-3h-3v3ZM11.456.5h-3v6h3v-6ZM58 53.044v3h6v-3h-6ZM7.121 61.621l37.674-37.674L58 10.743l3.774-3.774 1.003-1.002a883.796 883.796 0 0 0 .323-.324l.017-.016.004-.004.001-.001L61 3.5l-2.122-2.121v.001l-.005.004-.016.017-.066.065-.258.258-1.002 1.003L53.757 6.5 40.553 19.705 2.879 57.379 7.12 61.62ZM61 .5H11.456v6H61v-6Zm-3 3v49.544h6V3.5h-6Z"
+                      fill="currentColor"
+                      mask="url(#a)"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <div class="mt-16 lg:mt-56">
+                <div class="grid lg:grid-cols-8 gap-16 lg:gap-8 items-end">
+                  <div class="lg:col-span-3 xl:col-span-2">
+                    <p class="text-sm leading-none text-zinc-500">
+                      BRANDON, MS
+                    </p>
+                    <ul class="mt-3">
+                      <li class="footer__link">(888) 936-7249</li>
+                      <li class="footer__link">Info@Forbix.com</li>
+                    </ul>
+                  </div>
+                  <div class="lg:col-span-3 xl:col-span-2">
+                    <p class="text-sm leading-none text-zinc-500">
+                      LOS ANGELES, CA
+                    </p>
+                    <ul class="mt-3">
+                      <li class="footer__link">(601) 965-9677</li>
+                      <li class="footer__link">Info@Forbix.com</li>
+                    </ul>
+                  </div>
+                  <div class="lg:col-span-2 xl:col-span-4">
+                    <div
+                      class="flex justify-between gap-4 md:flex-col lg:items-end"
+                    >
+                      <a class="footer__social-link" target="_blank" href="#">
+                        INSTAGRAM
+                      </a>
+                      <a class="footer__social-link" target="_blank" href="#">
+                        FACEBOOK
+                      </a>
+                      <a class="footer__social-link" target="_blank" href="#">
+                        TWITTER
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- Footer end -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

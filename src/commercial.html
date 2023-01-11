@@ -1,0 +1,1999 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forbix | Investment company</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/content/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/content/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/content/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/content/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./images/content/favicon/safari-pinned-tab.svg"
+      color="#000000"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <div class="scroller">
+      <div data-barba="wrapper">
+        <!-- Preloader start -->
+        <div class="preloader">
+          <div class="preloader__content">
+            <p>Loading</p>
+            <p><span id="preloader-percent">0</span> %</p>
+          </div>
+        </div>
+        <!-- Preloader end -->
+
+        <!-- Page transition -->
+        <div class="page-transition">
+          <img src="./images/content/forbix-logo-light.svg" alt="" />
+        </div>
+        <!-- Page transition end -->
+
+        <!-- Navbar start -->
+        <div class="container relative">
+          <button class="navbar-burger">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <div class="navbar">
+          <div class="container">
+            <a class="navbar__logo" href="./index.html">
+              <img src="./images/content/logo-light.svg" alt="" />
+            </a>
+          </div>
+
+          <div class="navbar__list">
+            <div class="navbar__list-item">
+              <div class="container" data-cursor-arrow>
+                <a href="./commercial.html" class="navbar__list-link">
+                  <span class="navbar__list-num">01/</span>
+                  <span class="navbar__list-text">Commercial loans</span>
+                  <!-- <img
+                  class="navbar__list-img"
+                  src="./images/content/nav-img.png"
+                  alt=""
+                />
+               -->
+                  <video
+                    class="navbar__list-img"
+                    muted
+                    autoplay
+                    src="./videos/home.mp4"
+                  ></video>
+                </a>
+              </div>
+            </div>
+            <div class="navbar__list-item">
+              <div class="container" data-cursor-arrow>
+                <a href="./portfolio.html" class="navbar__list-link">
+                  <span class="navbar__list-num">02/</span>
+                  <span class="navbar__list-text"> Real estate investment</span>
+                  <!-- <img class="navbar__list-img" src="./images/content/nav-img.png" alt="" /> -->
+                  <video
+                    class="navbar__list-img"
+                    muted
+                    autoplay
+                    src="./videos/home.mp4"
+                  ></video>
+                </a>
+              </div>
+            </div>
+            <div class="navbar__list-item">
+              <div class="container" data-cursor-arrow>
+                <a href="./residential.html" class="navbar__list-link">
+                  <span class="navbar__list-num">03/</span>
+                  <span class="navbar__list-text">Residential loans</span>
+                  <!-- <img class="navbar__list-img" src="./images/content/nav-img.png" alt="" /> -->
+                  <video
+                    class="navbar__list-img"
+                    muted
+                    autoplay
+                    src="./videos/home.mp4"
+                  ></video>
+                </a>
+              </div>
+            </div>
+            <div class="navbar__list-item">
+              <div class="container" data-cursor-arrow>
+                <a href="about.html" class="navbar__list-link">
+                  <span class="navbar__list-num">04/</span>
+                  <span class="navbar__list-text">About us</span>
+                  <!-- <img class="navbar__list-img" src="./images/content/nav-img.png" alt="" /> -->
+                  <video
+                    class="navbar__list-img"
+                    muted
+                    autoplay
+                    src="./videos/home.mp4"
+                  ></video>
+                </a>
+              </div>
+            </div>
+            <div class="navbar__list-item">
+              <div class="container" data-cursor-arrow>
+                <a href="./contact.html" class="navbar__list-link">
+                  <span class="navbar__list-num">05/</span>
+                  <span class="navbar__list-text">Contacts</span>
+                  <!-- <img class="navbar__list-img" src="./images/content/nav-img.png" alt="" /> -->
+                  <video
+                    class="navbar__list-img"
+                    muted
+                    autoplay
+                    src="./videos/home.mp4"
+                  ></video>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="navbar__footer">
+              <a href="#">Instagram</a>
+              <a href="#">Facebook</a>
+              <a href="#">Twitter</a>
+            </div>
+          </div>
+        </div>
+        <!-- Navbar start -->
+
+        <div data-barba="container" data-barba-namespace="commercial">
+          <div class="container" id="relative-container">
+            <a href="./index.html" class="logo">
+              <svg
+                width="98"
+                viewBox="0 0 97 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="logo-path"
+                  d="M0 22.7905H4.0678V13.794H10.8374V9.84495H4.0678V4.76752H11.1639V0.818501H0L0 22.7905Z"
+                  fill="#292B32"
+                />
+                <path
+                  class="logo-path"
+                  d="M24.3157 19.3762C20.0698 19.3762 16.8334 15.9912 16.8334 11.8343C16.8334 7.73678 20.0401 4.38165 24.3454 4.38165C28.6508 4.38165 31.8574 7.73678 31.8574 11.8343C31.8574 15.9318 28.6805 19.3762 24.3157 19.3762ZM24.3454 0.432632C17.7835 0.432632 12.7656 5.56925 12.7656 11.9234C12.7656 18.2777 17.8132 23.3252 24.3454 23.3252C30.8777 23.3252 35.9253 18.2777 35.9253 11.9234C35.9253 5.56925 30.9074 0.432632 24.3454 0.432632"
+                  fill="#292B32"
+                />
+                <path
+                  class="logo-path"
+                  d="M50.0536 7.7965C50.0536 5.68836 49.1925 0.81899 41.7992 0.81899H35.4453V4.75958H39.5463V4.76782H41.918C42.868 4.76782 45.9858 4.8571 45.9858 8.03405C45.9858 11.2112 42.868 11.3001 41.918 11.3001H39.5463V14.6851H39.5723L45.2731 22.791H50.2912L44.1152 14.6851C47.7079 14.3288 50.0536 11.3001 50.0536 7.7965Z"
+                  fill="#292B32"
+                />
+                <path
+                  class="logo-path"
+                  d="M59.5618 18.8417H56.9194V13.2298H59.5618C62.7388 13.2298 63.0357 15.249 63.0357 16.0803C63.0357 18.812 60.0367 18.8417 59.5618 18.8417ZM56.9194 4.76752H58.8196C59.7101 4.76752 61.6996 4.88649 61.6996 7.02433C61.6996 7.58834 61.4918 9.28094 58.8196 9.28094H56.9194V4.76752ZM63.3624 10.795C63.9563 10.4683 65.7674 9.34033 65.7674 6.6086C65.7674 0.848387 59.5024 0.818694 58.1365 0.818694H52.8516V22.7905H58.3443C65.3812 22.7905 67.1035 19.2869 67.1035 16.11C67.1035 13.6455 65.7378 11.5967 63.3624 10.795"
+                  fill="#292B32"
+                />
+                <path
+                  class="logo-path"
+                  d="M69.6172 22.7905H73.685V0.900106H69.6172V22.7905Z"
+                  fill="#292B32"
+                />
+
+                <path
+                  class="logo-path"
+                  d="M96.0055 0.903645H91.3005L86.1248 8.46125L80.9786 0.903645H76.2734L83.7724 11.784L76.2734 22.6646H80.9786L86.1248 15.1364L91.3005 22.6646H96.0055L88.4774 11.784L96.0055 0.903645Z"
+                  fill="#292B32"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Hero start -->
+          <header
+            class="container pt-[114px] md:pt-[106px] pb-[109px] md:pb-[277px]"
+          >
+            <p class="hidden md:inline-block text-sm header-animation">
+              <a href="index.html" class="text-[#A1A1A1]">Home /</a> Commercial
+              Loans
+            </p>
+
+            <h1 class="heading-primary text-center md:mt-[89px]">
+              <span class="header-animation inline-block">COMMERCIAL </span>
+              <br />
+              <span class="header-animation inline-block">LOANS</span>
+            </h1>
+
+            <p
+              class="max-w-[262px] mt-[21px] text-sm md:hidden mx-auto leading-tight"
+            >
+              Providing a variety of financial loan solutions to help you
+              achieve your commercial real estate aspirations, with your.
+            </p>
+            <div class="a-line md:hidden mt-12"></div>
+
+            <div class="grid grid-cols-2 md:gap-6 mt-[36px] md:mt-[261px]">
+              <div>
+                <p
+                  class="md:text-sm leading-none uppercase header-animation inline-block"
+                >
+                  Commercial
+                </p>
+              </div>
+              <div>
+                <p
+                  class="max-w-[726px] text-sm leading-tight md:text-[35px] lg:indent-[196px] header-animation"
+                >
+                  Forbix is committed to certainty of execution. As a direct
+                  lender and investor, we have an in-depth understanding of
+                  commercial lending so you can utilize our expertise to secure
+                  the best loan and financing options available to meet your
+                  specific project criteria.
+                </p>
+                <p
+                  class="text-sm leading-tight md:text-base mt-6 md:mt-[54px] max-w-[346px] header-animation"
+                >
+                  Forbix is also part of a select group of commercial lenders
+                  licensed by the US Department of Housing and Urban Development
+                  (HUD).
+                </p>
+              </div>
+            </div>
+          </header>
+          <!-- Hero end -->
+
+          <!-- Accordions section start -->
+          <div class="container">
+            <div class="accordion-wrapper">
+              <div class="accordion" data-cursor-dark>
+                <div class="accordion__header">
+                  <p class="accordion__num">01</p>
+                  <h4
+                    class="accordion__heading !text-[40px] md:!text-[71px] !leading-tight"
+                  >
+                    Fixed Loans
+                  </h4>
+
+                  <!-- w-7 h-7 lg:w-10 lg:h-10" -->
+                  <svg class="w-7 h-7 lg:w-10 lg:h-10 text-[#303030]">
+                    <use
+                      xlink:href="./images/content/sprite.svg#icon-arrow"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="accordion__content !max-w-full">
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <div class="md:col-start-2 md:col-end-3">
+                      <div class="grid grid-cols-2 gap-6 md:gap-0">
+                        <div class="col-start-2 col-end-3">
+                          <p class="text-[#A1A1AA] text-sm leading-tight">
+                            Description
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Items -->
+                      <div
+                        class="md:divide-y md:divide-neutral-300 mt-5 md:mt-[37px]"
+                      >
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <div>
+                            <p class="md:text-[25px] max-w-[220px]">
+                              Overview:
+                            </p>
+                          </div>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Depending on your particular property scenario,
+                            these type of loan products can provide a hedge
+                            against inflation and long-term stability as well as
+                            eliminate a major source of cash flow uncertainty.
+                            Generally, these loans are non-recourse and
+                            assumable.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Forbix 35 Year Fixed (Insured by FHA):
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            The loan product is fixed and fully amortized for
+                            the entire 35-year term. The loan is non-recourse
+                            and fully assumable. Prepayment penalties are
+                            typically a step down for a 10-year period.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            FNMA 30 Year Fixed
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            For clients that prefer higher cash flow, interest
+                            only loans are available under different product
+                            types ranging from 5 – 15 years of interest-only
+                            payments
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            FNMA/FREDDIE Hybrid Fixed
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            The loan products have a fixed rate term ranging
+                            from 5 to 12 years and are amortized over 30
+                            years. The loans may have an interest only component
+                            for the entire length of the term.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion" data-cursor-dark>
+                <div class="accordion__header">
+                  <p class="accordion__num">02</p>
+                  <h4
+                    class="accordion__heading !text-[40px] md:!text-[71px] !leading-tight"
+                  >
+                    bridge loans
+                  </h4>
+
+                  <!-- w-7 h-7 lg:w-10 lg:h-10" -->
+                  <svg class="w-7 h-7 lg:w-10 lg:h-10 text-[#303030]">
+                    <use
+                      xlink:href="./images/content/sprite.svg#icon-arrow"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="accordion__content !max-w-full">
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <div class="md:col-start-2 md:col-end-3">
+                      <div class="grid grid-cols-2 gap-6 md:gap-0">
+                        <div class="col-start-2 col-end-3">
+                          <p class="text-[#A1A1AA] text-sm leading-tight">
+                            Description
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Items -->
+                      <div
+                        class="md:divide-y md:divide-neutral-300 mt-5 md:mt-[37px]"
+                      >
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <div>
+                            <p class="md:text-[25px] max-w-[220px]">
+                              Overview:
+                            </p>
+                          </div>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Forbix offers an array of bridge loan products up to
+                            90% LTC. These loans are typically necessary for
+                            buildings that don’t qualify for many loan products
+                            due to high vacancy or ones in need of substantial
+                            rehab. Loans are interest only and tailored to the
+                            specific financial scenario. Structured Bridge
+                            Financing.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Loan amount:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            $1 million minimum.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">Loan term:</p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            1 to 5 years, extension options available.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Amortization:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Determined on a case-by-case basis. Typically,
+                            interest-only payments.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Minimum DSCR:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            1.2 (120%) at exit with appropriate ratio in place.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Maximum LTV:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            75% of exit value.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">LTC:</p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            80% (up to 90% with mezzanine loan).
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Interest rate:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Floating rate over LIBOR index. Spread varies based
+                            on risk and terms.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Eligible properties:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Traditional acquisitions, rehab properties, entitled
+                            land, construction completion and renovations.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Sponsorship:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Strong track record of similar projects, subject to
+                            net worth and liquidity requirements.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">Security:</p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            First or second mortgage lien on subject property.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Tax & insurance escrows:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Evaluated case by case.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Replacement reserves:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Evaluated case by case.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">Recourse:</p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Generally non-recourse with standard carve-outs.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Prepayment:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Generally permitted.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion" data-cursor-dark>
+                <div class="accordion__header">
+                  <p class="accordion__num">03</p>
+                  <h4
+                    class="accordion__heading !text-[40px] md:!text-[71px] !leading-tight"
+                  >
+                    construction loans
+                  </h4>
+
+                  <!-- w-7 h-7 lg:w-10 lg:h-10" -->
+                  <svg class="w-7 h-7 lg:w-10 lg:h-10 text-[#303030]">
+                    <use
+                      xlink:href="./images/content/sprite.svg#icon-arrow"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="accordion__content !max-w-full">
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <div class="md:col-start-2 md:col-end-3">
+                      <div class="grid grid-cols-2 gap-6 md:gap-0">
+                        <div class="col-start-2 col-end-3">
+                          <p class="text-[#A1A1AA] text-sm leading-tight">
+                            Description
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Items -->
+                      <div
+                        class="md:divide-y md:divide-neutral-300 mt-5 md:mt-[37px]"
+                      >
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <div>
+                            <p class="md:text-[25px] max-w-[220px]">
+                              Overview:
+                            </p>
+                          </div>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            The principals at Forbix have been financing,
+                            building and developing multi-family properties for
+                            over two decades. As a result, we are intimately
+                            familiar with the loan and financing options we
+                            provide to our clients. We believe in full
+                            transparency and take the time to explain all
+                            aspects of our offerings—details you won’t find on a
+                            “term sheet.”
+                            <br /><br />
+                            Forbix 40 Year Fixed Construction to Permanent
+                            (Insured by FHA): This loan is fixed during the
+                            course of construction and 40 years thereafter. It’s
+                            non-recourse and fully assumable for qualified
+                            applicants.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">Standard:</p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            The loan is variable for 18-36 months with mini perm
+                            loan options. It’s typically tied to the LIBOR index
+                            or the WSJ prime rate.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">SBA (504):</p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            SBA 504 Construction Loans are designed for
+                            owner-occupied commercial real estate construction.
+                            Occupancy requirements: 51% of the building for
+                            renovation loans and 60% for ground up construction.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion" data-cursor-dark>
+                <div class="accordion__header">
+                  <p class="accordion__num">04</p>
+                  <h4
+                    class="accordion__heading !text-[40px] md:!text-[71px] !leading-tight"
+                  >
+                    mezzanine loans
+                  </h4>
+
+                  <!-- w-7 h-7 lg:w-10 lg:h-10" -->
+                  <svg class="w-7 h-7 lg:w-10 lg:h-10 text-[#303030]">
+                    <use
+                      xlink:href="./images/content/sprite.svg#icon-arrow"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="accordion__content !max-w-full">
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <div class="md:col-start-2 md:col-end-3">
+                      <div class="grid grid-cols-2 gap-6 md:gap-0">
+                        <div class="col-start-2 col-end-3">
+                          <p class="text-[#A1A1AA] text-sm leading-tight">
+                            Description
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Items -->
+                      <div
+                        class="md:divide-y md:divide-neutral-300 mt-5 md:mt-[37px]"
+                      >
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <div>
+                            <p class="md:text-[25px] max-w-[220px]">
+                              Overview:
+                            </p>
+                          </div>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            These type of loans enable you to align yourself
+                            with Forbix as an experienced capital partner. They
+                            provide access to the full capital stack and can be
+                            combined with other loan products to achieve a
+                            higher loan-to-cost ratio. While the rate of
+                            mezzanine financing is generally higher compared to
+                            other loans, there is built-in flexibility should
+                            liquidity problems occur.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Loan amount:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            $1.5 million – $30 million.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">Loan term:</p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Generally 1–5 years with extension options
+                            available.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Amortization:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Interest-only or fixed principles paydowns.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Minimum DSCR:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            1.10 through debt service – case by case for JV
+                            equity.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Maximum LTV:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Up to 90%.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">LTC:</p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Up to 90%.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Interest rate:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Preferred rate of return and profit participation.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Eligible properties:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Multifamily, student and seniors housing (any
+                            others?) located in strong markets.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Eligible borrower:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Single asset entity.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Sponsorship:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Strong sponsors with proven track record and “skin
+                            in the game”.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">Security:</p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Pledge of ownership interests secured by UCC or
+                            preferred equity position.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Required reports:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            $Includes proposed exit financing, appraisal, phase
+                            1, PCNA.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">Repayment:</p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Generally permitted.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Lender fee:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Origination and negotiated exit fee.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion" data-cursor-dark>
+                <div class="accordion__header">
+                  <p class="accordion__num">05</p>
+                  <h4
+                    class="accordion__heading !text-[40px] md:!text-[71px] !leading-tight"
+                  >
+                    healthcare specific
+                  </h4>
+
+                  <!-- w-7 h-7 lg:w-10 lg:h-10" -->
+                  <svg class="w-7 h-7 lg:w-10 lg:h-10 text-[#303030]">
+                    <use
+                      xlink:href="./images/content/sprite.svg#icon-arrow"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="accordion__content !max-w-full">
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <div class="md:col-start-2 md:col-end-3">
+                      <div class="grid grid-cols-2 gap-6 md:gap-0">
+                        <div class="col-start-2 col-end-3">
+                          <p class="text-[#A1A1AA] text-sm leading-tight">
+                            Description
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Items -->
+                      <div
+                        class="md:divide-y md:divide-neutral-300 mt-5 md:mt-[37px]"
+                      >
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <div>
+                            <p class="md:text-[25px] max-w-[220px]">
+                              Overview:
+                            </p>
+                          </div>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Forbix provides non-recourse FHA-insured, long-term,
+                            fixed-rate financing for refinance, acquisition or
+                            moderate renovation of assisted living and nursing
+                            facilities nationwide.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Loan term & amortization:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Maximum term of 35 years or 75% of the remaining
+                            economic life, fully amortized.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Maximum loan:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Loan amount of the refinance purchase of existing
+                            properties is the lesser of: <br /><br />
+                            80% (85% non-profit) or market value. Mortgage
+                            amount supported by DSC of 1.45.
+                            <br /><br />
+                            100% of the transaction cost for a refinance (85% of
+                            the transaction cost for a purchase transaction.
+                            Recognizable transaction costs include repairs,
+                            initial replacement reserves, third-party reports
+                            and closing costs along with eligible existing
+                            indebtedness or purchase price).
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Fixed rate:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">Yes.</p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Eligible properties:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Facility must be completed or substantially
+                            rehabilitated for at least three years prior to the
+                            date of the application. Projects with additions
+                            completed less than years previous are eligible as
+                            long as the additional was not larger than the
+                            original project size and number of beds.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Eligible borrower:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Single asset entity.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Tax & Insurance escrows:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Monthly deposits required.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Commercial space:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Maximum 10% of gross floor areas and maximum 15% of
+                            effective gross income.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Required reports:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Appraisal, PCNA and Phase I Environmental.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Prepayment:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Negotiable. Generally two-year lockout with a 10% to
+                            1% declining pre-payment penalty. Other pre-payment
+                            options available.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">Assumable:</p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Subject to servicer and HUD approval and payment of
+                            assumption fee.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Good Faith Deposit:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Negotiable based on project type.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Expense escrow:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Sufficient amount to cover expenses and third-party
+                            costs.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Origination fee:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Negotiable.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            HUD application fee:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Non-refundable fee of $3 per $1K (0.3%) of the
+                            mortgage amount due to HUD with the firm commitment
+                            submission package.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            HUD inspection fee:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            $20 per unit when repairs are less than $3,000 per
+                            unit. 1% of repair costs otherwise.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Legal/closing fee:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Borrower pays legal counsel fee and miscellaneous
+                            closing costs.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Rehabilitation qualifications:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Repairs cannot exceed 15% of appraised value or
+                            replacement of two or more major building systems.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Davis Bacon:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            Not applicable.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            HUD mortgage insurance premium:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            1% MIP upfront at closing.
+                          </p>
+                        </div>
+
+                        <div
+                          class="grid grid-cols-2 gap-6 md:gap-0 py-4 md:pb-[54px] md:pt-[29px]"
+                        >
+                          <p class="md:text-[25px] max-w-[220px]">
+                            Annual MIP:
+                          </p>
+
+                          <p class="text-sm md:text-base leading-tight">
+                            0.77% for market rate properties and 0.45% for
+                            affordable properties.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Accordions section end -->
+
+          <!-- String section start -->
+          <div class="mt-[255px] lg:mt-[489px]">
+            <section class="marquee">
+              <div class="marquee__inner" aria-hidden="true" ref="inner">
+                <div class="marquee__part">forbix spotlight</div>
+                <div class="marquee__part">forbix spotlight</div>
+                <div class="marquee__part">forbix spotlight</div>
+                <div class="marquee__part">forbix spotlight</div>
+                <div class="marquee__part">forbix spotlight</div>
+                <div class="marquee__part">forbix spotlight</div>
+              </div>
+            </section>
+          </div>
+          <!-- String section end -->
+
+          <!-- Section info start -->
+          <div class="container mt-[247px] lg:mt-[467px]">
+            <div
+              class="grid grid-cols-2 md:grid-cols-8 md:gap-6 mb-6 md:mb-[74px]"
+            >
+              <div class="md:col-span-5">
+                <p class="uppercase md:text-[30px leading-tight]">
+                  forbix spotlight
+                </p>
+              </div>
+
+              <p class="text-[48px] hidden md:block leading-none">2021</p>
+            </div>
+
+            <div class="py-10">
+              <div class="flex justify-end will-change-auto">
+                <div
+                  class="flex flex-col md:flex-row md:items-end gap-4 md:gap-[56px]"
+                >
+                  <h4
+                    class="text-[90px] leading-none md:text-[150px] uppercase"
+                  >
+                    $1+ bln
+                  </h4>
+                  <p class="text-sm md:text-base leading-tight md:mb-7">
+                    in project equity <br class="hidden md:inline" />
+                    transactions
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="a-line"></div>
+
+            <div class="py-10">
+              <div class="flex will-change-auto">
+                <div
+                  class="flex flex-col md:flex-row md:items-end gap-4 md:gap-[56px]"
+                >
+                  <h4
+                    class="text-[90px] leading-none md:text-[150px] uppercase"
+                  >
+                    $750mm
+                  </h4>
+                  <p class="text-sm md:text-base leading-tight md:mb-7">
+                    in loans funded
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="a-line"></div>
+
+            <div class="py-10">
+              <div class="flex will-change-auto">
+                <div
+                  class="flex flex-col md:flex-row md:items-end gap-4 md:gap-[56px]"
+                >
+                  <h4
+                    class="text-[90px] leading-none md:text-[150px] uppercase"
+                  >
+                    1000+
+                  </h4>
+                  <p class="text-sm md:text-base leading-tight md:mb-7">
+                    residential units <br class="hidden md:inline" />
+                    owned & operated
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="a-line"></div>
+
+            <div class="py-10">
+              <div class="flex justify-end will-change-auto">
+                <div
+                  class="flex flex-col md:flex-row md:items-end gap-4 md:gap-[56px]"
+                >
+                  <h4
+                    class="text-[90px] leading-none md:text-[150px] uppercase"
+                  >
+                    400k
+                  </h4>
+                  <p class="text-sm md:text-base leading-tight md:mb-7">
+                    sq. ft. of retail space
+                    <br class="hidden md:inline" />
+                    owned & operated
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Section info end -->
+
+          <section class="container mt-[255px] md:mt-[350px]">
+            <h2 class="leading-none md:text-[25px]">
+              THE LOAN <br class="md:hidden" />
+              PROCESS
+            </h2>
+            <!-- Home video start -->
+            <div class="mt-[52px]">
+              <div class="header-animation">
+                <div class="h-parallaxremove">
+                  <video autoplay loop muted>
+                    <source src="./videos/home.mp4" type="video/mp4" />
+                    <source src="./videos/home.webm" type="video/webm" />
+                    Your browser doesn't support HTML5 video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
+            <!-- Home video end -->
+          </section>
+
+          <!-- Process section -->
+          <section class="overflow-hidden mt-4 md:mt-[46px]">
+            <div class="container">
+              <!-- Slider main container -->
+              <div class="swiper process-swiper" data-cursor-text="Drag">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide group">
+                    <div
+                      class="absolute -inset-px h-0 bg-[#24138B] group-hover:h-[calc(100%+2px)] transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)]"
+                    ></div>
+                    <div
+                      class="relative group-hover:translate-y-[16px] ease-[cubic-bezier(.77,.14,.11,.88)] duration-500"
+                    >
+                      <div class="process-swiper__num">01.</div>
+                      <h4 class="mt-12 process-swiper__heading">
+                        Application &nbsp; &rarr; &nbsp; Underwriting &nbsp;
+                        &rarr; &nbsp; Closing
+                      </h4>
+                      <p class="mt-6 md:mt-8 process-swiper__text">
+                        At Forbix, every client gets the individual attention
+                        they deserve. Our team members are dedicated to your
+                        needs which is why we’re able to streamline funding
+                        through these three steps.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide group">
+                    <div
+                      class="absolute -inset-px h-0 bg-[#24138B] group-hover:h-[calc(100%+2px)] transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)]"
+                    ></div>
+                    <div
+                      class="relative group-hover:translate-y-[16px] ease-[cubic-bezier(.77,.14,.11,.88)] duration-500"
+                    >
+                      <div class="process-swiper__num">02.</div>
+                      <h4 class="mt-12 process-swiper__heading">Application</h4>
+                      <p class="mt-6 md:mt-8 process-swiper__text">
+                        Your assigned processor will provide you with a complete
+                        checklist of the respective documentation needed to fund
+                        your specific financing scenario.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide group">
+                    <div
+                      class="absolute -inset-px h-0 bg-[#24138B] group-hover:h-[calc(100%+2px)] transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)]"
+                    ></div>
+                    <div
+                      class="relative group-hover:translate-y-[16px] ease-[cubic-bezier(.77,.14,.11,.88)] duration-500"
+                    >
+                      <div class="process-swiper__num">03.</div>
+                      <h4 class="mt-12 process-swiper__heading">Application</h4>
+                      <p class="mt-6 md:mt-8 process-swiper__text">
+                        We’ll ensure every “i” is dotted and every “t” is
+                        crossed. Once completed, we’ll provide you with loan
+                        approval.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide group">
+                    <div
+                      class="absolute -inset-px h-0 bg-[#24138B] group-hover:h-[calc(100%+2px)] transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)]"
+                    ></div>
+                    <div
+                      class="relative group-hover:translate-y-[16px] ease-[cubic-bezier(.77,.14,.11,.88)] duration-500"
+                    >
+                      <div class="process-swiper__num">04.</div>
+                      <h4 class="mt-12 process-swiper__heading">
+                        Underwriting
+                      </h4>
+                      <p class="mt-6 md:mt-8 process-swiper__text">
+                        During this phase, your assigned underwriter will verify
+                        the accuracy of the information you’ve provided and
+                        request additional information if necessary.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide group">
+                    <div
+                      class="absolute -inset-px h-0 bg-[#24138B] group-hover:h-[calc(100%+2px)] transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)]"
+                    ></div>
+                    <div
+                      class="relative group-hover:translate-y-[16px] ease-[cubic-bezier(.77,.14,.11,.88)] duration-500"
+                    >
+                      <div class="process-swiper__num">05.</div>
+                      <h4 class="mt-12 process-swiper__heading">
+                        Underwriting
+                      </h4>
+                      <p class="mt-6 md:mt-8 process-swiper__text">
+                        The underwriter then provides a full financial review
+                        related to you as an individual or your business
+                        regarding the loan.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide group">
+                    <div
+                      class="absolute -inset-px h-0 bg-[#24138B] group-hover:h-[calc(100%+2px)] transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)]"
+                    ></div>
+                    <div
+                      class="relative group-hover:translate-y-[16px] ease-[cubic-bezier(.77,.14,.11,.88)] duration-500"
+                    >
+                      <div class="process-swiper__num">06.</div>
+                      <h4 class="mt-12 process-swiper__heading">Closing</h4>
+                      <p class="mt-6 md:mt-8 process-swiper__text">
+                        During this final phase, we’ll prepare a closing
+                        checklist of final documentation.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide group">
+                    <div
+                      class="absolute -inset-px h-0 bg-[#24138B] group-hover:h-[calc(100%+2px)] transition-all duration-500 ease-[cubic-bezier(.77,.14,.11,.88)]"
+                    ></div>
+                    <div
+                      class="relative group-hover:translate-y-[16px] ease-[cubic-bezier(.77,.14,.11,.88)] duration-500"
+                    >
+                      <div class="process-swiper__num">07.</div>
+                      <h4 class="mt-12 process-swiper__heading">Closing</h4>
+                      <p class="mt-6 md:mt-8 process-swiper__text">
+                        Following review of the terms and conditions of the loan
+                        with all respective parties (co-borrowers, legal
+                        consultants, etc.), we’ll arrange for the transfer of
+                        funds.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Process section end -->
+
+          <!-- Reviews section start -->
+          <section class="container mt-[258px] md:mt-[360px]">
+            <h2 class="text-base md:text-[30px] uppercase">Reviews</h2>
+
+            <div class="mt-[42px] lg:mt-[108px]">
+              <!-- Slider main container -->
+              <div class="swiper review-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="grid md:grid-cols-2 items-end">
+                      <figure
+                        class="flex pl-5 md:pl-0 items-center space-x-[14px]"
+                      >
+                        <img
+                          class="w-[143px] h-[143px] md:w-[83px] md:h-[83px] rounded-full overflow-hidden object-cover"
+                          src="./images/content/Mark-Stown.jpg"
+                          alt=""
+                        />
+
+                        <figcaption>
+                          <h4 class="text-base md:text-[25px] uppercase">
+                            Mark Stown
+                          </h4>
+                          <p class="mt-1 text-sm md:text-base">
+                            businessman, investor
+                          </p>
+                        </figcaption>
+                      </figure>
+                      <div class="grid grid-cols-2 md:flex">
+                        <div class="col-start-2 col-end-3">
+                          <p class="text-dark text-xs md:text-lg">
+                            COMMERCIAL LOANS SLIDE 1
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="a-line-a my-6"></div>
+                    <div class="grid md:grid-cols-8 grid-gap items-center">
+                      <div
+                        class="md:col-start-5 md:col-end-8 text-dark review-slide-content"
+                        data-cursor-arrow
+                      >
+                        <p>
+                          “What I find remarkable is that this text has been the
+                          industry's standard dummy text ever since some printer
+                          in the 1500s took a galley of type and scrambled it to
+                          make a type specimen book; it has survived not only
+                          four centuries of letter-by-letter resetting but even
+                          the leap into electronic typesetting, essentially
+                          unchanged except for an occasional 'ing' or 'y' thrown
+                          in” .
+                        </p>
+                        <br />
+                        <p>
+                          “What I find remarkable is that this text has been the
+                          industry's standard dummy text ever since some printer
+                          in the 1500s took a galley of type and scrambled it to
+                          make a type specimen book; it has survived not only
+                          four centuries of letter-by-letter resetting but even
+                          the leap into electronic typesetting, essentially.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="grid md:grid-cols-2 items-center">
+                      <figure
+                        class="flex pl-5 md:pl-0 items-center space-x-[14px]"
+                      >
+                        <img
+                          class="w-[143px] h-[143px] md:w-[83px] md:h-[83px] rounded-full overflow-hidden object-cover"
+                          src="./images/content/John.jpg"
+                          alt=""
+                        />
+
+                        <figcaption>
+                          <h4 class="text-base md:text-[25px] uppercase">
+                            Mark Stown
+                          </h4>
+                          <p class="mt-1 text-sm md:text-base">
+                            businessman, investor
+                          </p>
+                        </figcaption>
+                      </figure>
+                      <div class="grid grid-cols-2 md:flex">
+                        <div class="col-start-2 col-end-3">
+                          <p class="text-dark text-xs md:text-lg">
+                            COMMERCIAL LOANS SLIDE 2
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="a-line-a my-6"></div>
+                    <div class="grid md:grid-cols-8 grid-gap items-center">
+                      <div
+                        class="md:col-start-5 md:col-end-8 text-dark review-slide-content"
+                        data-cursor-arrow
+                      >
+                        <p>
+                          “What I find remarkable is that this text has been the
+                          industry's standard dummy text ever since some printer
+                          in the 1500s took a galley of type and scrambled it to
+                          make a type specimen book; it has survived not only
+                          four centuries of letter-by-letter resetting but even
+                          the leap into electronic typesetting, essentially
+                          unchanged except for an occasional 'ing' or 'y' thrown
+                          in” .
+                        </p>
+                        <br />
+                        <p>
+                          “What I find remarkable is that this text has been the
+                          industry's standard dummy text ever since some printer
+                          in the 1500s took a galley of type and scrambled it to
+                          make a type specimen book; it has survived not only
+                          four centuries of letter-by-letter resetting but even
+                          the leap into electronic typesetting, essentially.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="grid md:grid-cols-2 items-center">
+                      <figure
+                        class="flex pl-5 md:pl-0 items-center space-x-[14px]"
+                      >
+                        <img
+                          class="w-[143px] h-[143px] md:w-[83px] md:h-[83px] rounded-full overflow-hidden object-cover"
+                          src="./images/content/Chak.jpg"
+                          alt=""
+                        />
+
+                        <figcaption>
+                          <h4 class="text-base md:text-[25px] uppercase">
+                            Mark Stown
+                          </h4>
+                          <p class="mt-1 text-sm md:text-base">
+                            businessman, investor
+                          </p>
+                        </figcaption>
+                      </figure>
+                      <div class="grid grid-cols-2 md:flex">
+                        <div class="col-start-2 col-end-3">
+                          <p class="text-dark text-xs md:text-lg">
+                            COMMERCIAL LOANS SLIDE 3
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="a-line-a my-6"></div>
+                    <div class="grid md:grid-cols-8 grid-gap items-center">
+                      <div
+                        class="md:col-start-5 md:col-end-8 text-dark review-slide-content"
+                        data-cursor-arrow
+                      >
+                        <p>
+                          “What I find remarkable is that this text has been the
+                          industry's standard dummy text ever since some printer
+                          in the 1500s took a galley of type and scrambled it to
+                          make a type specimen book; it has survived not only
+                          four centuries of letter-by-letter resetting but even
+                          the leap into electronic typesetting, essentially
+                          unchanged except for an occasional 'ing' or 'y' thrown
+                          in” .
+                        </p>
+                        <br />
+                        <p>
+                          “What I find remarkable is that this text has been the
+                          industry's standard dummy text ever since some printer
+                          in the 1500s took a galley of type and scrambled it to
+                          make a type specimen book; it has survived not only
+                          four centuries of letter-by-letter resetting but even
+                          the leap into electronic typesetting, essentially.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-12">
+              <div class="grid md:grid-cols-8 grid-gap items-center">
+                <div class="md:col-start-5 md:col-end-8">
+                  <div
+                    class="flex items-center justify-center gap-10 md:justify-start"
+                  >
+                    <button class="text-xl review-swiper-prev md:hidden">
+                      PREV
+                    </button>
+
+                    <div class="flex items-start">
+                      <span
+                        class="review-swiper-current text-dark text-sm inline-block mt-0.5"
+                        >1</span
+                      >
+                      <span>/</span>
+                      <span class="review-swiper-total text-[#DBDBDB] text-xl"
+                        >6</span
+                      >
+                    </div>
+                    <button class="text-xl review-swiper-next md:hidden">
+                      NEXT
+                    </button>
+                  </div>
+
+                  <div
+                    class="flex justify-center md:justify-start mt-[91px] md:mt-[65px]"
+                  >
+                    <a href="#" class="button js-magnet-btn">
+                      <span class="button__fill"></span>
+                      <span class="js-magnet-btn-text">Leave feedback</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Reviews section end -->
+
+          <section class="container mt-[236px] md:mt-[341px]">
+            <div class="grid grid-cols-2 md:gap-6">
+              <div>
+                <h2 class="text-base leading-none md:text-3xl">
+                  Acquisitions <br />
+                  Team
+                </h2>
+              </div>
+              <div>
+                <p class="text-sm md:text-base tracking-normal max-w-[364px]">
+                  Our team of experienced multifamily investment professionals
+                  is focused on delivering quality customer care. We strive for
+                  responsiveness while maintaining open lines of communication.
+                </p>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 md:gap-6 mt-[46px] md:mt-[97px]">
+              <div
+                class="md:col-start-2 md:col-end-3 grid grid-cols-2 md:grid-cols-1 md:gap-20"
+              >
+                <div>
+                  <p class="text-xl md:text-[25px]">Steve Brannan</p>
+                  <p class="text-sm md:text-base md:text-[#A1A1A1]">
+                    Managing Director
+                  </p>
+                  <br />
+                  <p class="text-xl md:text-base">(980) 224-4184</p>
+                  <p class="text-sm md:text-base">sbrannan@nymtrust.com</p>
+                </div>
+
+                <div>
+                  <p class="text-xl md:text-[25px]">Joe Kunzon</p>
+                  <p class="text-sm md:text-base md:text-[#A1A1A1]">Director</p>
+                  <br />
+                  <p class="text-xl md:text-base">(980) 224-4184</p>
+                  <p class="text-sm md:text-base">jkunzon@nymtrust.com</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="mt-[74px] md:mt-[121px] grid justify-center md:grid-cols-2 gap-6"
+            >
+              <div class="md:col-start-2 md:col-end-3">
+                <a href="#" class="button js-magnet-btn">
+                  <span class="button__fill"></span>
+                  <span class="js-magnet-btn-text">Get in touch</span>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <!-- FAQ section -->
+          <section class="container mt-[194px] md:mt-[404px]">
+            <h2 class="text-base md:text-3xl leading-none uppercase">
+              Answer <br />
+              / questions
+            </h2>
+
+            <div class="mt-[57px] md:mt-[96px] accordion-primary-wrapper">
+              <div class="accordion-primary">
+                <div class="accordion-primary__header">
+                  <h4 class="accordion-primary__heading">
+                    What kind of commercial loans can Forbix provide
+                  </h4>
+                </div>
+                <div class="accordion-primary__content">
+                  <p>
+                    We offer a full range of commercial financing/loans,
+                    including ground-up construction, bridge, mezzanine, private
+                    money and fixed covering multifamily, industrial, retail,
+                    shopping centers, mixed use, hospitality, student housing,
+                    healthcare-specific, self-storage, car washes, SBA and land.
+                  </p>
+                </div>
+
+                <svg class="accordion-primary__icon">
+                  <use
+                    xlink:href="./images/content/sprite.svg#icon-accordion"
+                  ></use>
+                </svg>
+              </div>
+
+              <div class="accordion-primary">
+                <div class="accordion-primary__header">
+                  <h4 class="accordion-primary__heading">
+                    Where is your lending area
+                  </h4>
+                </div>
+                <div class="accordion-primary__content">
+                  <p>
+                    While we have offices in California and Mississippi, Forbix
+                    provides financing/loans all over the country. Due to state
+                    and local regulations, varying options will be available
+                    depending on your location. We recommend contacting us to
+                    find out what is available in your area regarding your
+                    particular scenario.
+                  </p>
+                </div>
+
+                <svg class="accordion-primary__icon">
+                  <use
+                    xlink:href="./images/content/sprite.svg#icon-accordion"
+                  ></use>
+                </svg>
+              </div>
+
+              <div class="accordion-primary">
+                <div class="accordion-primary__header">
+                  <h4 class="accordion-primary__heading">
+                    In what products is Forbix a direct lender
+                  </h4>
+                </div>
+                <div class="accordion-primary__content">
+                  <p>
+                    We’re direct on private money/bridge loans which generally
+                    have 1-2 yr. terms, close quickly and qualify based on
+                    income and equity of the property—often used for investment
+                    (i.e. single family residences, 2-4 units, apartment
+                    buildings, some construction, office buildings and
+                    mixed-use).
+                  </p>
+                </div>
+
+                <svg class="accordion-primary__icon">
+                  <use
+                    xlink:href="./images/content/sprite.svg#icon-accordion"
+                  ></use>
+                </svg>
+              </div>
+
+              <div class="accordion-primary">
+                <div class="accordion-primary__header">
+                  <h4 class="accordion-primary__heading">
+                    What is the timeline for closing a commercial loan, refi or
+                    purchase
+                  </h4>
+                </div>
+                <div class="accordion-primary__content">
+                  <p>
+                    The timeline varies depending on the type of loan. Forbix is
+                    expert at streamlining the process which is distinct
+                    advantage when time is of the essence. Bridge/private loans
+                    generally close in about 2 weeks and bank loans in
+                    approximately 45 days.
+                  </p>
+                </div>
+
+                <svg class="accordion-primary__icon">
+                  <use
+                    xlink:href="./images/content/sprite.svg#icon-accordion"
+                  ></use>
+                </svg>
+              </div>
+
+              <div class="accordion-primary">
+                <div class="accordion-primary__header">
+                  <h4 class="accordion-primary__heading">
+                    What distinguishes Forbix from other commercial lenders
+                  </h4>
+                </div>
+                <div class="accordion-primary__content">
+                  <p>
+                    Forbix advises clients from the standpoint of both a lender
+                    and investor. The principals at Forbix have been investing
+                    in commercial properties as well as debt instruments for
+                    decades so we have intimate knowledge of the whole process
+                    and can expertly advise our clients in respect to their
+                    particular financial objectives. Additionally, Forbix is
+                    committed to certainty of execution and provides
+                    unparalleled client service!
+                  </p>
+                </div>
+
+                <svg class="accordion-primary__icon">
+                  <use
+                    xlink:href="./images/content/sprite.svg#icon-accordion"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+          </section>
+          <!-- FAQ section end -->
+
+          <!-- Section cta -->
+          <section class="container mt-[253px] md:mt-[396px]">
+            <div class="max-w-[860px] mx-auto">
+              <div class="lg:col-start-2 lg:col-end- text-center">
+                <h2
+                  class="text-[40px] lg:text-[69px] leading-none text-dark uppercase"
+                >
+                  Interested in becoming an Investment Partner?
+                </h2>
+                <p
+                  class="max-w-[672px] mx-auto text-sm md:text-lg mt-5 md:mt-[38px] text-[#A1A1AA] leading-tight"
+                >
+                  Contact us for a free review of your current portfolio to see
+                  if what we offer is a good fit for your long-term investment
+                  strategies. Helping our clients reach their individual
+                  investment goals with real estate is our primary focus.
+                </p>
+
+                <div class="mt-8 lg:mt-12">
+                  <a
+                    href="#"
+                    class="button button--dark js-magnet-btn js-hero-animation"
+                  >
+                    <span class="button__fill"></span>
+                    <span class="js-magnet-btn-text">Become an investor</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Section cta end -->
+
+          <!-- Footer start -->
+          <footer class="footer mt-56 md:mt-80">
+            <div class="container">
+              <div class="pb-5 border-b border-gray-200">
+                <a href="./contact.html" class="footer__heading">
+                  Get in touch
+
+                  <svg
+                    class="footer__icon"
+                    width="64"
+                    height="64"
+                    viewBox="0 0 64 64"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask
+                      id="a"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y=".5"
+                      width="64"
+                      height="64"
+                      fill="#000"
+                    >
+                      <path fill="#fff" d="M0 .5h64v64H0z" />
+                      <path d="m5 59.5 56-56Zm56-56H11.456Zm0 0v49.544Z" />
+                    </mask>
+                    <path
+                      d="M2.879 57.379.757 59.5 5 63.743l2.121-2.122L2.88 57.38ZM61 3.5h3v-3h-3v3ZM11.456.5h-3v6h3v-6ZM58 53.044v3h6v-3h-6ZM7.121 61.621l37.674-37.674L58 10.743l3.774-3.774 1.003-1.002a883.796 883.796 0 0 0 .323-.324l.017-.016.004-.004.001-.001L61 3.5l-2.122-2.121v.001l-.005.004-.016.017-.066.065-.258.258-1.002 1.003L53.757 6.5 40.553 19.705 2.879 57.379 7.12 61.62ZM61 .5H11.456v6H61v-6Zm-3 3v49.544h6V3.5h-6Z"
+                      fill="currentColor"
+                      mask="url(#a)"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <div class="mt-16 lg:mt-56">
+                <div class="grid lg:grid-cols-8 gap-16 lg:gap-8 items-end">
+                  <div class="lg:col-span-3 xl:col-span-2">
+                    <p class="text-sm leading-none text-zinc-500">
+                      BRANDON, MS
+                    </p>
+                    <ul class="mt-3">
+                      <li class="footer__link">(888) 936-7249</li>
+                      <li class="footer__link">Info@Forbix.com</li>
+                    </ul>
+                  </div>
+                  <div class="lg:col-span-3 xl:col-span-2">
+                    <p class="text-sm leading-none text-zinc-500">
+                      LOS ANGELES, CA
+                    </p>
+                    <ul class="mt-3">
+                      <li class="footer__link">(601) 965-9677</li>
+                      <li class="footer__link">Info@Forbix.com</li>
+                    </ul>
+                  </div>
+                  <div class="lg:col-span-2 xl:col-span-4">
+                    <div
+                      class="flex justify-between gap-4 md:flex-col lg:items-end"
+                    >
+                      <a class="footer__social-link" target="_blank" href="#">
+                        INSTAGRAM
+                      </a>
+                      <a class="footer__social-link" target="_blank" href="#">
+                        FACEBOOK
+                      </a>
+                      <a class="footer__social-link" target="_blank" href="#">
+                        TWITTER
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- Footer end -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

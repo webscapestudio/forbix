@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Base styles
+@import "base/vars";
+@import "base/mixins";
+@import "base/base";
+@import "base/typography";
+@import "base/utils";
+
+// Components
+@import "components/container";
+@import "components/preloader";
+@import "components/navbar";
+@import "components/cursor";
+@import "components/buttons";
+@import "components/concept";
+@import "components/height-parallax";
+@import "components/scroll-string";
+@import "components/a-line";
+@import "components/marquee";
+@import "components/parallax";
+@import "components/team-slide";
+@import "components/history-slide";
+@import "components/accordion";
+@import "components/process-swiper";
+@import "components/map";
+@import "components/form";
+@import "components/video";
+
+// Layouts
+@import "layouts/footer";
+
+// Animations
+@import "animations/header";
+@import "animations/team";
+
+.scroller {
+  height: 100vh;
+  overflow: auto;
+}
+
+.img__wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.--parallaxed-img {
+  width: 100%;
+  display: block;
+  height: 110%;
+  object-fit: cover;
+}

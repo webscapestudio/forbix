@@ -1,0 +1,51 @@
+.footer {
+  padding: 32px 0;
+
+  &__heading {
+    display: flex;
+    align-items: flex-end;
+    font-size: 82px;
+    line-height: 100%;
+    gap: 12px;
+    text-transform: uppercase;
+    letter-spacing: -0.015em;
+    justify-content: space-between;
+    transition: color 0.2s ease-out;
+
+    &:hover {
+      color: var(--color-primary);
+    }
+
+    @include media-up(md) {
+      font-size: 98px;
+      line-height: 98.34%;
+      align-items: center;
+    }
+  }
+
+  &__icon {
+    margin-bottom: 14px;
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    color: inherit;
+    transition: color 0.2s ease-out;
+
+    @include media-up(lg) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    font-size: 34px;
+    line-height: 135%;
+  }
+
+  &__social-link {
+    color: var(--color-dark);
+  }
+
+  @include media-up(md) {
+    padding: 52px 0 62px;
+  }
+}

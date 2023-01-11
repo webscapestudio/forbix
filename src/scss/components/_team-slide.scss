@@ -1,0 +1,38 @@
+.team-swiper {
+  width: 100vw;
+  cursor: grab;
+  overflow: initial !important;
+
+  &:active {
+    cursor: grabbing;
+  }
+  .swiper-slide {
+    @apply w-full sm:w-auto;
+  }
+
+  @include media-up(md) {
+    img {
+      filter: grayscale(1);
+      transition: filter 0.2s ease-out;
+
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+  }
+
+  .swiper-slide-active img {
+    @include media-down(md) {
+      filter: grayscale(0);
+    }
+  }
+}
+
+.team-swiper-prev,
+.team-swiper-next {
+  @apply text-lg text-dark;
+
+  &.swiper-button-disabled {
+    @apply text-neutral-400;
+  }
+}

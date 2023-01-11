@@ -24,16 +24,11 @@ export default class Num {
         duration: 2,
         x: getDirection(),
         force3D: true,
-        ease: "none",
         scrollTrigger: {
-          // markers: true,
-          invalidateOnRefresh: true,
-          scrub: 0.5,
+          scrub: 2,
           scroller: ".smooth-scroll",
           scrub: true,
           trigger: num,
-          start: "top bottom",
-          end: "bottom top",
         },
       });
     });

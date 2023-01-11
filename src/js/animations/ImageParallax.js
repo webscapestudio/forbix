@@ -4,22 +4,20 @@ gsap.registerPlugin(ScrollTrigger);
 
 export const ImageParallax = () => {
   const items = gsap.utils.toArray(".img__wrapper");
-  items.forEach((item) => {
-    const imgBox = item.querySelector(".--parallaxed-img");
+
+  items.forEach((item, idx) => {
+    const img = item.querySelector(".--parallaxed-img");
+
     var tl = gsap.timeline({
       scrollTrigger: {
         trigger: item,
-        scroller: document.querySelector("[data-scroll-container]"),
-        start: "top 80%",
         scrub: 1,
-        markers: true,
-        pin: false,
       },
     });
-    tl.from(imgBox, {
-      yPercent: -10,
-    }).to(imgBox, {
-      yPercent: 10,
+    tl.from(img, {
+      yPercent: -7,
+    }).to(img, {
+      yPercent: 7,
     });
   });
 };

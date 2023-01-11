@@ -54,7 +54,8 @@ ScrollTrigger.scrollerProxy(".smooth-scroll", {
     return arguments.length
       ? scroll.scrollTo(value, 0, 0)
       : scroll.scroll.instance.scroll.y;
-  }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+  },
+
   getBoundingClientRect() {
     return {
       top: 0,
@@ -63,7 +64,13 @@ ScrollTrigger.scrollerProxy(".smooth-scroll", {
       height: window.innerHeight,
     };
   },
+
+  pinType: document.querySelector(".smooth-scroll").style.transform
+    ? "transform"
+    : "fixed",
 });
+
+ScrollTrigger.defaults({ scroller: ".smooth-scroll" });
 
 window.select = (element, src = document) => src.querySelector(element);
 
@@ -76,50 +83,26 @@ window.removeClasses = (els, className) => {
   for (let el of els) el.classList.remove(className);
 };
 
-const navbar = new Navbar();
-
-// let bodyScrollBar = Scrollbar.init(document.querySelector(".scroller"), {
-//   damping: 0.07,
-// });
-
-// ScrollTrigger.scrollerProxy(".scroller", {
-//   scrollTop(value) {
-//     // if (arguments.length) {
-//     //   bodyScrollBar.scrollTop = value;
-//     // }
-//     return bodyScrollBar.scrollTop;
-//   },
-// });
-
-// bodyScrollBar.addListener(ScrollTrigger.update);
-
 window.addEventListener("resize", appHeight);
 appHeight();
 
-document.querySelectorAll(".emitresize").forEach((item) => {
-  ScrollTrigger.update();
-});
-
 new preloader(() => {
   runAnimations();
-
   setTimeout(() => {
     runScrollAnimations();
     ImageParallax();
-    // Scrollbar.init(document.querySelector(".scroller"), {
-    //   damping: 0.07,
-    // });
-  }, 0);
+    appHeight();
+  }, 1200);
 });
 
-barba.hooks.after(() => {
-  window.scrollTo(0, 0);
+// barba.hooks.after(() => {
+//   window.scrollTo(0, 0);
 
-  // Scrollbar.init(document.querySelector(".scroller"), { damping: 0.07 });
-  runAnimations();
-  ImageParallax();
-  runScrollAnimations();
-});
+//   // Scrollbar.init(document.querySelector(".scroller"), { damping: 0.07 });
+//   runAnimations();
+//   ImageParallax();
+//   runScrollAnimations();
+// });
 
 // barba.init({
 //   transitions: [
@@ -222,6 +205,4 @@ function runScrollAnimations() {
   new ALine();
   new Num();
   new Team();
-  // new Parallax();
-  ImageParallax();
 }

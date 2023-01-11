@@ -1,5 +1,4 @@
 import gsap from "gsap";
-import Scrollbar from "smooth-scrollbar";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,8 +9,10 @@ export const ImageParallax = () => {
     var tl = gsap.timeline({
       scrollTrigger: {
         trigger: item,
-        scroller: ".scroller",
-        scrub: true,
+        scroller: document.querySelector("[data-scroll-container]"),
+        start: "top 80%",
+        scrub: 1,
+        markers: true,
         pin: false,
       },
     });

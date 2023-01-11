@@ -40,6 +40,31 @@ import Video from "./components/Video";
 import Footer from "./animations/Footer";
 import { ImageParallax } from "./animations/ImageParallax";
 
+import LocomotiveScroll from "locomotive-scroll";
+
+const scroll = new LocomotiveScroll({
+  el: document.querySelector(".smooth-scroll"),
+  smooth: true,
+});
+
+scroll.on("scroll", ScrollTrigger.update);
+
+ScrollTrigger.scrollerProxy(".smooth-scroll", {
+  scrollTop(value) {
+    return arguments.length
+      ? scroll.scrollTo(value, 0, 0)
+      : scroll.scroll.instance.scroll.y;
+  }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+  getBoundingClientRect() {
+    return {
+      top: 0,
+      left: 0,
+      width: window.innerWidth,
+      height: window.innerHeight,
+    };
+  },
+});
+
 window.select = (element, src = document) => src.querySelector(element);
 
 window.selectAll = (elements, src = document) => src.querySelectorAll(elements);
@@ -53,20 +78,20 @@ window.removeClasses = (els, className) => {
 
 const navbar = new Navbar();
 
-let bodyScrollBar = Scrollbar.init(document.querySelector(".scroller"), {
-  damping: 0.07,
-});
+// let bodyScrollBar = Scrollbar.init(document.querySelector(".scroller"), {
+//   damping: 0.07,
+// });
 
-ScrollTrigger.scrollerProxy(".scroller", {
-  scrollTop(value) {
-    if (arguments.length) {
-      bodyScrollBar.scrollTop = value;
-    }
-    return bodyScrollBar.scrollTop;
-  },
-});
+// ScrollTrigger.scrollerProxy(".scroller", {
+//   scrollTop(value) {
+//     // if (arguments.length) {
+//     //   bodyScrollBar.scrollTop = value;
+//     // }
+//     return bodyScrollBar.scrollTop;
+//   },
+// });
 
-bodyScrollBar.addListener(ScrollTrigger.update);
+// bodyScrollBar.addListener(ScrollTrigger.update);
 
 window.addEventListener("resize", appHeight);
 appHeight();
@@ -81,13 +106,18 @@ new preloader(() => {
   setTimeout(() => {
     runScrollAnimations();
     ImageParallax();
+    // Scrollbar.init(document.querySelector(".scroller"), {
+    //   damping: 0.07,
+    // });
   }, 0);
 });
 
 barba.hooks.after(() => {
   window.scrollTo(0, 0);
+
   // Scrollbar.init(document.querySelector(".scroller"), { damping: 0.07 });
   runAnimations();
+  ImageParallax();
   runScrollAnimations();
 });
 
@@ -192,5 +222,6 @@ function runScrollAnimations() {
   new ALine();
   new Num();
   new Team();
-  new Parallax();
+  // new Parallax();
+  ImageParallax();
 }

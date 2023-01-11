@@ -28,11 +28,15 @@
       href="./images/content/favicon/safari-pinned-tab.svg"
       color="#000000"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css"
+    />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
-    <div class="scroller">
+    <div class="smooth-scroll" data-scroll-container>
       <!-- Preloader start -->
       <div data-barba="wrapper">
         <div class="preloader">
@@ -441,12 +445,12 @@
                 <a
                   href="./portfolio-details.html"
                   data-cursor-text="View case"
-                  class="grid lg:grid-cols-8 items-center gap-4 lg:gap-6"
+                  class="grid img__wrapper lg:grid-cols-8 items-center gap-4 lg:gap-6"
                 >
-                  <div class="lg:col-span-4 img__wrapper">
-                    <div class="parallax-block h-80 lg:h-[1000px]">
+                  <div class="lg:col-span-4">
+                    <div class="h-80 lg:h-[1000px]">
                       <img
-                        class="parallax-block__item --parallaxed-img"
+                        class="--parallaxed-img"
                         src="images/content/cases/case-1.png"
                         alt=""
                       />
@@ -473,11 +477,11 @@
                 <div class="mt-[200px] lg:mt-[442px]">
                   <a
                     href="./portfolio-details.html"
-                    class="parallax-block h-80 lg:h-[650px]"
+                    class="img__wrapper h-80 lg:h-[650px]"
                     data-cursor-text="View case"
                   >
                     <img
-                      class="parallax-block__item"
+                      class="--parallaxed-img"
                       src="images/content/cases/case-2.png"
                       alt=""
                     />

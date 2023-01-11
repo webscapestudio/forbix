@@ -29,7 +29,7 @@ export default class Num {
           // markers: true,
           invalidateOnRefresh: true,
           scrub: 0.5,
-          scroller: ".scroller",
+          scroller: ".smooth-scroll",
           scrub: true,
           trigger: num,
           start: "top bottom",

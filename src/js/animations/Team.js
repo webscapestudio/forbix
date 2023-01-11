@@ -18,7 +18,7 @@ export default class Team {
         ease: "circ.inOut",
 
         scrollTrigger: {
-          scroller: ".scroller",
+          scroller: ".smooth-scroll",
           // markers: true,
           trigger: element,
           scrub: false,

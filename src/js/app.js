@@ -106,8 +106,9 @@ window.onload = () => {
     appHeight();
     runAnimations();
     setTimeout(() => {
-      runScrollAnimations();
       ImageParallax();
+
+      runScrollAnimations();
       scroll.update();
       scroll.start();
     }, 1200);

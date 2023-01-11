@@ -46,12 +46,6 @@ export default class Navbar {
     gsap.set(this.navbarLogo, options);
     gsap.set(this.navbarItems, options);
     gsap.set(this.navbarSocials, options);
-
-    // document.querySelectorAll('.navbar__logo').forEach((logo) => {
-    //   logo.addEventListener('click', () => {
-
-    //   })
-    // })
   }
 
   start() {
@@ -89,14 +83,10 @@ export default class Navbar {
     gsap.set(".navbar", { display: "flex" });
     document.documentElement.classList.add("navbar-active");
     this.tl.timeScale(1).play();
-    Scrollbar.destroy(document.querySelector(".scroller"));
   }
 
   close() {
     document.documentElement.classList.remove("navbar-active");
-    let bodyScrollBar = Scrollbar.init(document.querySelector(".scroller"), {
-      damping: 0.07,
-    });
     this.tl.timeScale(2.2).reverse();
   }
 }

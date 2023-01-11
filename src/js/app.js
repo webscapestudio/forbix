@@ -83,6 +83,8 @@ window.removeClasses = (els, className) => {
   for (let el of els) el.classList.remove(className);
 };
 
+const navbar = new Navbar();
+
 window.addEventListener("resize", appHeight);
 appHeight();
 
@@ -94,8 +96,6 @@ new preloader(() => {
     appHeight();
   }, 1200);
 });
-
-// barba.hooks.after(() => {
 //   window.scrollTo(0, 0);
 
 //   // Scrollbar.init(document.querySelector(".scroller"), { damping: 0.07 });

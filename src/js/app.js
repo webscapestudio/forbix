@@ -46,12 +46,17 @@ window.onload = () => {
   const scroll = new LocomotiveScroll({
     el: document.querySelector(".smooth-scroll"),
     smooth: true,
+
     mobile: {
+      smooth: false,
+    },
+    smartphone: {
       smooth: false,
     },
     tablet: {
       smooth: false,
     },
+    // smoothMobile: 0,
   });
 
   scroll.on("scroll", ScrollTrigger.update);

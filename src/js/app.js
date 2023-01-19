@@ -90,16 +90,6 @@ window.onload = () => {
 
   window.addEventListener("resize", appHeight);
 
-  // document.querySelectorAll(".emitresize").forEach((item) => {
-  //   item.addEventListener("click", () => {
-  //     appHeight();
-  //     runScrollAnimations();
-  //     ImageParallax();
-  //     scroll.update();
-  //     scroll.start();
-  //   });
-  // });
-
   new Navbar(scroll);
 
   new preloader(() => {

@@ -46,7 +46,7 @@ window.onload = () => {
   const scroll = new LocomotiveScroll({
     el: document.querySelector(".smooth-scroll"),
     smooth: true,
-    smoothMobile: true,
+    smoothMobile: false,
   });
 
   scroll.on("scroll", ScrollTrigger.update);
@@ -102,90 +102,6 @@ window.onload = () => {
       scroll.start();
     }, 1200);
   });
-  //   window.scrollTo(0, 0);
-
-  //   // Scrollbar.init(document.querySelector(".scroller"), { damping: 0.07 });
-  //   runAnimations();
-  //   ImageParallax();
-  //   runScrollAnimations();
-  // });
-
-  // barba.init({
-  //   transitions: [
-  //     {
-  //       name: "general-transition",
-  //       sync: true,
-  //       once() {},
-  //       // async leave(data) {
-  //       //   const done = this.async();
-
-  //       //   if (data.trigger !== "back" && data.trigger.closest(".navbar")) {
-  //       //     navbar.close();
-  //       //     await wait(800);
-  //       //     done();
-  //       //   } else {
-  //       //     const tl = gsap.timeline();
-
-  //       //     tl.to(".page-transition", {
-  //       //       clipPath: "circle(80% at 50% 50%)",
-  //       //       duration: 1,
-  //       //       ease: "power3.out",
-  //       //     }).to(
-  //       //       ".page-transition",
-  //       //       {
-  //       //         clipPath: "circle(80% at 260% 50%)",
-  //       //         duration: 1,
-  //       //         ease: "power3.in",
-
-  //       //         onComplete() {
-  //       //           gsap.set(".page-transition", {
-  //       //             clipPath: "circle(30% at -80% 50%)",
-  //       //           });
-  //       //         },
-  //       //       },
-  //       //       "-=.2"
-  //       //     );
-  //       //     await wait(1200);
-  //       //     done();
-  //       //   }
-  //       // },
-
-  //       async enter(data) {
-  //         const done = this.async();
-
-  //         if (data.trigger !== "back" && data.trigger.closest(".navbar")) {
-  //           navbar.close();
-  //           await wait(800);
-  //           done();
-  //         } else {
-  //           const tl = gsap.timeline();
-
-  //           tl.to(".page-transition", {
-  //             clipPath: "circle(80% at 50% 50%)",
-  //             duration: 1,
-  //             ease: "power3.out",
-  //           }).to(
-  //             ".page-transition",
-  //             {
-  //               clipPath: "circle(80% at 260% 50%)",
-  //               duration: 1,
-  //               ease: "power3.in",
-
-  //               onComplete() {
-  //                 gsap.set(".page-transition", {
-  //                   clipPath: "circle(30% at -80% 50%)",
-  //                 });
-  //               },
-  //             },
-  //             "-=.2"
-  //           );
-  //           await wait(1200);
-  //           done();
-  //         }
-  //       },
-  //     },
-  //   ],
-  // });
 
   function runAnimations() {
     new Header();

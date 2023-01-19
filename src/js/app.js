@@ -47,10 +47,10 @@ window.onload = () => {
     el: document.querySelector(".smooth-scroll"),
     smooth: true,
     mobile: {
-      smooth: true,
+      smooth: false,
     },
     tablet: {
-      smooth: true,
+      smooth: false,
     },
   });
 

@@ -85,6 +85,7 @@ window.onload = () => {
   scroll.stop();
 
   ScrollTrigger.defaults({ scroller: ".smooth-scroll" });
+  ScrollTrigger.config({ ignoreMobileResize: true });
 
   window.select = (element, src = document) => src.querySelector(element);
 
